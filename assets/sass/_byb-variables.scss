@@ -1,0 +1,33 @@
+/** extend and override boostraap variables */
+@font-face {
+  font-family: 'BigShouldersText';
+  src: url("/assets/fonts/Big_Shoulders_Text/BigShouldersText-Regular.ttf") format("truetype");
+}
+
+$font-main: 'BigShouldersText', sans-serif;
+
+
+$gray:#6f8099;
+$gray-400:#e9ecef96;
+$green:#43c6ac;
+$orange:#fc4a1a;
+
+
+$primary: $green;
+$secondary :$gray;
+$light: $gray-400;
+
+
+$main-color-text:#6c757d;
+
+$colors :(
+    "green":      $green,
+    "orange":     $orange,
+    "gray":       $gray
+  );
+  
+$theme-colors: (
+  "primary":$green,
+  "secondary":$gray
+
+);

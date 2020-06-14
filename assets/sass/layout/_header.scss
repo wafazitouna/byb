@@ -1,0 +1,43 @@
+header {
+    font-size:1.5rem;
+    line-height: 2.5rem;
+    border-bottom: 0.25rem solid $primary;
+    a{
+        color:$white;
+        font-size:1.5rem!important;
+        &:hover{
+            color:$white!important;
+            opacity: 0.8;
+        }
+    }
+    i{
+        color:$white;
+        font-size:2rem!important;
+    }
+    .nav-item {
+        padding: 0 1rem;
+       
+    }
+
+    .notification-number {
+
+        font-size: 0.75rem;
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        text-align: center;
+        padding: 0.25rem 0 0 0.1rem;
+        border-radius: 50%;
+        z-index: 2;
+        font-weight: 500;
+        background: $orange;
+        color: $white;
+        line-height: 1rem;
+        bottom: 1rem;
+        left: 0.5rem;
+       
+    }
+    .fa-bell{
+        line-height: 4rem;
+}
+}
