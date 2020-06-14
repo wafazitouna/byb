@@ -1,0 +1,41 @@
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    height: 100%;
+}
+
+.menu-option {
+    font-size: 1.25rem;
+    width: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+        font-size: 2rem;
+        margin-right: 1.25rem;
+    }
+    .btn{
+        color: $main-color-text;
+    }
+}
+.menu-option-label {
+    font-size: 1.5rem;
+}
+
+.secondary-menu {
+    height: 6rem;
+}
+
+.border-left-menu-option{
+    border-left: 0.15rem solid #ddd;
+}
+
+.redo-undo{
+    width: 5rem;
+    opacity: 0.5;
+}
