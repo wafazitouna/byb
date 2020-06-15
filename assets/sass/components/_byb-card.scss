@@ -26,3 +26,17 @@
     -o-transition: transform 0.25s ease;
     transition: transform 0.25s ease;
 }
+
+.card{
+    background-color:$bg-light;
+    border:none;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+    border: 0;
+    box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+}
+
+.card-header{
+    border-bottom: none;
+    background-color:none;
+}
