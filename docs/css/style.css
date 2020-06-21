@@ -9858,7 +9858,7 @@ body {
   border: 1px solid #43c6ac;
 }
 
-.border-dotted {
+.border-dashed {
   border-style: dotted;
   border-width: 2px;
 }

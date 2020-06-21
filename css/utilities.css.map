@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../assets/sass/utilities/utilities.scss"
+    ],
+    "names": [],
+    "file": "utilities.css"
+}

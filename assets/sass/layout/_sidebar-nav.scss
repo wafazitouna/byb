@@ -42,7 +42,7 @@
         padding-left: 0;
         margin-left: 1.75rem;
          li {
-            border-left: 0.15rem solid #ddd;
+
             &:first-child{
                 padding-top: 2rem;
             }
@@ -55,6 +55,19 @@
                 position: relative;
                 bottom: 0.5rem
             }
+            &:last-child{
+                border-left: none;
+                &::after{
+                    content: "";
+                        height: 1.75rem;
+                        background: #ddd;
+                        width: 0.15rem;
+                        display: block;
+                        position: absolute;
+                        top: 0
+                }
+            }
+           
         }
     }
 
