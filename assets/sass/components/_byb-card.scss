@@ -47,3 +47,27 @@
     border-bottom: none;
     background-color:transparent;
 }
+
+.move-card{
+    top:38%;
+    background-color: rgb(247, 247, 247);
+    z-index: 999;
+    position: absolute;
+    height: 4rem;
+
+}
+
+
+.horizontal-row{
+    width: 3rem;
+    &:after {
+        background-color: #ddd;
+        content: "";
+        width: 0.25rem;
+        height: 100%;
+    }
+}
+
+.delete-card {
+    height: 2rem;
+}
