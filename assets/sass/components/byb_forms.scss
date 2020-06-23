@@ -73,3 +73,16 @@
   .byb-form-control:-ms-input-placeholder {
     color: $placeholder-color;
   }
+
+  select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .select-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+  }

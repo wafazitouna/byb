@@ -54,11 +54,11 @@
     z-index: 999;
     position: absolute;
     height: 4rem;
-
 }
 
 
 .horizontal-row{
+    color: #ddd;
     width: 3rem;
     &:after {
         background-color: #ddd;
@@ -70,4 +70,12 @@
 
 .delete-card {
     height: 2rem;
+}
+
+.btn-actions{
+    font-size: 1.25rem!important;
+    .material-icons{
+        top: 0.25rem;
+        position: relative;
+    }
 }

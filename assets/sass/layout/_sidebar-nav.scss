@@ -1,7 +1,10 @@
+.left-column {
+
+  box-shadow: 0 3px 5px 0 rgba(32, 33, 36, 0.18);
+  background-color:$bg-light;
+}
 #side-nav-left {
-    padding: 7rem 1.5rem;
-    box-shadow: 0 3px 5px 0 rgba(32, 33, 36, 0.18);
-    background-color:$bg-light;
+  padding: 7rem 1rem;
     .nav-link 
     {
 
@@ -14,16 +17,18 @@
               font-size: 1.5rem;
               width: 3.5rem;
               height: 3.5rem;
-    text-align: center;
+              text-align: center;
+              }
+              .fa-money{
+                background-color: rgba(0,0,0,0.2)!important;
+                color: $primary!important;
               }
              
     }
     .active{
         background-color: $orange!important;
       }
-   a{
-        font-size: 1rem;
-    }
+
     li{
         padding-bottom: 1.5rem;
         position: relative;
@@ -34,12 +39,11 @@
     .text-menu{
         color:$main-color-text;
         padding-left: 1rem;
-        font-size: 1.25rem;
     }
 
 
     .byb-sub-menu {
-        list-style: none;
+      list-style: none;
     padding-left: 1.75rem;
     border-left: 1px solid #ddd;
     margin-left: 1.25rem;
@@ -47,6 +51,7 @@
 
             &:first-child{
                 padding-top: 2rem;
+               
             }
             &:before{
                 content: "";
@@ -73,36 +78,82 @@
         }
     }
 
-    span.edit-menu {
-        right: 5rem;
-        position: absolute;
-        left: 10rem;
-        top: 1.25rem;
-        display: inline-block;
-        font-size: 1.75rem;
+    .add-submenu{
+      background-color: #f7f7f7!important;
+      border: 1px dashed #ddd;
+      color: $primary!important;
+    }
+    .edit-menu {
+      right: 5rem;
+      position: absolute;
+      left: 9rem;
+      top: 1.75rem;
+      display: inline-block;
+      font-size: 1.25rem;
     }
 }
 
 
-.sub-menu-item {
-    margin: 1.5rem 0;
+
+/**
+ * submenu tree
+ * ------------------------------
+ */
+
+ .tree,
+ .tree ul {
+   margin:0 0 0 1em; /* indentation */
+   padding:0;
+   list-style:none;
+   color:#ddd;
+   position:relative;
+ }
+ 
+
+
+ .tree {
+
+  ul {
+    margin-left:.5em;
     &:before {
-        content: "";
-        width: 0.15rem;
-        height: 5rem;
-        background-color: red;
-        display: inline-block;
-        right: 1.75rem;
-        position: absolute;
-        left: -26px;
+      content:"";
+      display:block;
+      width:0;
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      border-left:1px solid;
     }
-    &:after {
-        content: "";
-        width: 1.5rem;
-        height: 0.15rem;
-        background-color: blue;
-        display: inline-block;
-        left: -9.5rem;
-        position: relative;
-    }
-}
+  }
+  li{
+    margin: 0;
+    padding: 0 1.75em;
+     &:before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 0;
+      border-top: 1px solid;
+      margin-top: -1px;
+      position: absolute;
+      top: 1.75rem;
+      left: 0;
+     }
+    &:first-child{
+      padding-top: 2rem;
+      &:before {
+        height:auto;
+        top: 3.5rem;
+        bottom:0;
+     }
+   }
+  &:last-child:before {
+    background-color: #fff;
+    height:auto;
+    top: 1.75rem;
+    bottom:0;
+  }
+  
+  }
+ }

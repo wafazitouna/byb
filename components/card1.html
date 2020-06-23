@@ -1,8 +1,8 @@
 <div id="card1" class="card mb-5">
     <div class="card-header">
         <div class="row">
-            <div class="col-7 col-md-9"> Lorem ipsum</div>
-            <div class="col-5 col-md-3  text-right">
+            <div class="col-12 col-md-9"> Lorem ipsum</div>
+            <div class="col-12 col-md-3  text-md-right btn-actions">
                 <span class="iconify" data-icon="entypo:add-to-list"
                     data-inline="false"></span>
                <span class="material-icons ml-3 mr-3">delete</span>
@@ -27,17 +27,17 @@
                     <input type="text" placeholder="placeholder" class="byb-form-control" />
                 </div>
                 <div class="col-md-12">
-                    <textarea id="froala-editor" class="byb-form-control">Editor</textarea>
+                    <textarea id="froala-editor1" class="byb-form-control" placeholder="Place holder"></textarea>
                 </div>
             </div>
             <div class="row mb-4">
                 <div class="col-md-2 d-flex align-items-center">
                     <span class="step-label">step 1</span>
                 </div>
-                <div class="col-md-10 d-flex">
+                <div class="col-md-10 d-flex align-items-center">
                     <input type="text" placeholder="placeholder" class="byb-form-control" />
-                    <span class="cirle-btn bg-white">
-                        <span class="iconify" data-icon="entypo:cross"
+                    <span class="remove-row">
+                        <span class="iconify cirle-btn bg-white" data-icon="entypo:cross"
                             data-inline="false"></span>
                     </span>
                 </div>
@@ -47,10 +47,10 @@
                 <div class="col-md-2 d-flex align-items-center">
                     <span class="step-label">step 2</span>
                 </div>
-                <div class="col-md-10 d-flex">
+                <div class="col-md-10 d-flex align-items-center">
                     <input type="text" placeholder="placeholder" class="byb-form-control" />
-                    <span class="cirle-btn bg-white">
-                        <span class="iconify" data-icon="entypo:cross"
+                    <span class="remove-row">
+                        <span class="iconify cirle-btn bg-white" data-icon="entypo:cross"
                             data-inline="false"></span>
                     </span>
                 </div>
@@ -59,9 +59,10 @@
                 <div class="col-md-2 d-flex align-items-center">
                     <span class="step-label">step 3</span>
                 </div>
-                <div class="col-md-10 d-flex">
+                <div class="col-md-10 d-flex align-items-center">
                     <input type="text" placeholder="placeholder" class="byb-form-control" />
-                    <span class="cirle-btn bg-white"> <span class="iconify"
+                    <span class="remove-row"> 
+                        <span class="iconify cirle-btn bg-white"
                             data-icon="entypo:cross" data-inline="false"></span> </span>
                 </div>
             </div>
@@ -69,10 +70,12 @@
                 <div class="col-md-2 d-flex align-items-center">
                     <span class="step-label">step 4</span>
                 </div>
-                <div class="col-md-10 d-flex">
+                <div class="col-md-10 d-flex align-items-center">
                     <input type="text" placeholder="placeholder" class="byb-form-control" />
-                    <span class="cirle-btn bg-primary"> <span class="iconify"
-                            data-icon="entypo:plus" data-inline="false"></span> </span>
+                    <span class="remove-row"> 
+                        <span class="iconify cirle-btn bg-primary"
+                            data-icon="entypo:plus" data-inline="false"></span> 
+                    </span>
                 </div>
             </div>
         </div>
@@ -94,3 +97,7 @@
     </span>
 
 </div>
+
+<script>
+    new FroalaEditor('textarea#froala-editor1');
+ </script>
