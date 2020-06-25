@@ -8955,7 +8955,7 @@ select {
   width: 4.25rem;
   height: 3.25rem;
   margin-left: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .square-colorful-bloc {
@@ -8978,6 +8978,7 @@ select {
   color: #fff;
   padding: 1rem;
   border-radius: 5px;
+  font-size: 1.25rem;
 }
 
 .btn {
@@ -9200,10 +9201,10 @@ footer i {
 }
 
 #side-nav-left {
-  padding: 7rem 1rem;
+  padding: 7rem 15px;
 }
 
-#side-nav-left .nav-link i.fa, #side-nav-left .nav-link .sub-menu-item-icon {
+#side-nav-left .nav-link i.fa {
   display: inline-block;
   border-radius: 50%;
   padding: 1rem;
@@ -9218,6 +9219,30 @@ footer i {
 #side-nav-left .nav-link .fa-money {
   background-color: rgba(0, 0, 0, 0.2) !important;
   color: #43c6ac !important;
+}
+
+#side-nav-left .nav-link .sub-menu-item-icon {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #43c6ac;
+  color: #fff;
+  font-size: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+}
+
+#side-nav-left .nav-link .sub-menu-item-icon i.fa {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #43c6ac;
+  color: #fff;
+  font-size: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
 }
 
 #side-nav-left .active {
@@ -9384,9 +9409,7 @@ footer i {
 .card {
   background-color: rgba(0, 0, 0, 0.03);
   border: none;
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
   border: 0;
   -webkit-box-shadow: 0 4px 6px 0 rgba(32, 33, 36, 0.28);
           box-shadow: 0 4px 6px 0 rgba(32, 33, 36, 0.28);
@@ -9490,6 +9513,11 @@ footer i {
 .redo-undo {
   width: 5rem;
   opacity: 0.5;
+}
+
+span.menu-option-label {
+  min-width: 4rem;
+  font-size: 1.25rem;
 }
 
 .byb-form-control {
