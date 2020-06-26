@@ -9068,6 +9068,15 @@ select {
   }
 }
 
+#card5 label {
+  margin-bottom: 1.5rem;
+}
+
+.row-action {
+  position: relative;
+  right: 1rem;
+}
+
 header {
   line-height: 2.5rem;
   border-bottom: 0.25rem solid #43c6ac;
@@ -9137,6 +9146,11 @@ header .navbar {
   header span.menu-option-label {
     width: 10rem;
   }
+}
+
+header .dropdown-menu.show {
+  -webkit-transform: translate3d(50px, 14px, 0px) !important;
+          transform: translate3d(50px, 14px, 0px) !important;
 }
 
 .home-link {
@@ -9489,7 +9503,8 @@ footer i {
   .menu-option {
     width: 100%;
     border-bottom: 0.15rem solid #ddd;
-    border-left: none;
+    border-left: none !important;
+    text-align: center;
   }
 }
 
@@ -9504,6 +9519,11 @@ footer i {
   .secondary-menu {
     height: 100vh;
   }
+}
+
+.secondary-menu .dropdown-menu.show {
+  -webkit-transform: translate3d(5px, 56px, 0px) !important;
+          transform: translate3d(5px, 56px, 0px) !important;
 }
 
 .border-left-menu-option {
@@ -9634,16 +9654,17 @@ select {
 
 .byb-table .remove-row-table {
   top: 1.75rem;
-  left: 46%;
+  left: 57%;
+  color: #d6d6d6;
 }
 
 .byb-table .remove-row-table:before {
   content: "";
   content: "";
-  height: 2px;
+  height: 1px;
   background-color: #ddd;
   position: absolute;
-  width: 1.40rem;
+  width: 1.5rem;
   top: 23px;
   z-index: 0;
   -webkit-transform: rotate(74deg) translateY(-3px) translateX(7px);
@@ -9652,14 +9673,14 @@ select {
 
 .byb-table .remove-row-table:after {
   content: "";
-  height: 2px;
+  height: 1px;
   background-color: #ddd;
   position: absolute;
-  width: 1.10rem;
+  width: 1.5rem;
   top: -3px;
   z-index: 0;
-  -webkit-transform: rotate(-69deg) translateY(-16px) translateX(1px);
-          transform: rotate(-69deg) translateY(-16px) translateX(1px);
+  -webkit-transform: rotate(-75deg) translateY(-16px) translateX(5px);
+          transform: rotate(-75deg) translateY(-16px) translateX(5px);
 }
 
 td:first-child {
@@ -9681,10 +9702,10 @@ td:first-child {
 .line-before:before {
   content: "";
   display: inline-block;
-  height: 1.25px;
+  height: 1px;
   background-color: #ddd;
   position: absolute;
-  width: 5.5rem;
+  width: 6rem;
   left: 22px;
   top: 8px;
 }
@@ -9692,11 +9713,12 @@ td:first-child {
 .remove-colum {
   left: 45%;
   top: 1rem;
+  color: #d6d6d6;
 }
 
 .remove-colum:before {
   content: "";
-  height: 2px;
+  height: 1px;
   background-color: #ddd;
   position: absolute;
   width: 2.75rem;
@@ -9708,7 +9730,7 @@ td:first-child {
 
 .remove-colum:after {
   content: "";
-  height: 2px;
+  height: 1px;
   background-color: #ddd;
   position: absolute;
   width: 2.75rem;
@@ -9724,13 +9746,13 @@ tr {
 
 .add-row-top {
   top: -10px;
-  right: 1rem;
+  right: 0.5rem;
   color: #43c6ac;
 }
 
 .add-row-bottom {
   top: 4.35rem;
-  right: 1.25rem;
+  right: 0.5rem;
   color: #43c6ac;
 }
 
@@ -9738,11 +9760,11 @@ tr {
   content: "";
   height: 3.75rem;
   background-color: #ddd;
-  width: 1.5px;
+  width: 1px;
   position: absolute;
   left: 7px;
   display: inline-block;
-  top: 20px;
+  top: 18px;
 }
 
 .td-custom-style {
@@ -9773,6 +9795,10 @@ tr {
   vertical-align: middle !important;
   border-left: 1px solid #dee2e6 !important;
   padding: 0 0.75rem !important;
+}
+
+.name-row-column {
+  color: #3333339e;
 }
 
 .bg-orange {

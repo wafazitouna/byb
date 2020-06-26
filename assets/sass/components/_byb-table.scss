@@ -13,27 +13,28 @@
 
     .remove-row-table {
         top: 1.75rem;
-        left: 46%;
+        left: 57%;
+        color: #d6d6d6;
         &:before {
             content: "";
             content: "";
-            height: 2px;
+            height: 1px;
             background-color: #ddd;
             position: absolute;
-            width: 1.40rem;
+            width: 1.5rem;
             top: 23px;
             z-index: 0;
             transform: rotate(74deg) translateY(-3px) translateX(7px);
         }
         &:after {
             content: "";
-            height: 2px;
+            height: 1px;
             background-color: #ddd;
             position: absolute;
-            width: 1.10rem;
+            width: 1.5rem;
             top: -3px;
             z-index: 0;
-            transform: rotate(-69deg) translateY(-16px) translateX(1px);
+            transform: rotate(-75deg) translateY(-16px) translateX(5px);
         }
     }
     
@@ -58,19 +59,20 @@ td:first-child {
 .line-before:before {
     content: "";
     display: inline-block;
-    height: 1.25px;
+    height: 1px;
     background-color: #ddd;
     position: absolute;
-    width: 5.5rem;
+    width: 6rem;
     left: 22px;
     top: 8px;
 }
 .remove-colum{
     left: 45%;
     top:1rem;
+    color: #d6d6d6;
     &:before {
         content: "";
-        height: 2px;
+        height: 1px;
         background-color: #ddd;
         position: absolute;
         width: 2.75rem;
@@ -80,7 +82,7 @@ td:first-child {
     }
     &:after {
         content: "";
-        height: 2px;
+        height:1px;
         background-color: #ddd;
         position: absolute;
         width: 2.75rem;
@@ -97,13 +99,13 @@ tr{
 
 .add-row-top{
     top: -10px;
-    right: 1rem;
+    right: 0.5rem;
     color: $primary;
 }
 
 .add-row-bottom{
     top: 4.35rem;
-    right: 1.25rem;
+    right:0.5rem;
     color: $primary;
 }
 
@@ -111,11 +113,11 @@ tr{
     content: "";
     height: 3.75rem;
     background-color: #ddd;
-    width: 1.5px;
+    width: 1px;
     position: absolute;
     left: 7px;
     display: inline-block;
-    top: 20px;
+    top: 18px;
 }
 
 
@@ -153,4 +155,8 @@ tr{
     border-left: 1px solid #dee2e6!important;
     padding: 0 0.75rem!important;
 
+}
+
+.name-row-column{
+    color:#3333339e;
 }
