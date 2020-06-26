@@ -78,6 +78,10 @@
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
+    option:first-child
+{
+    color: $placeholder-color;
+}
   }
 
   .select-icon {

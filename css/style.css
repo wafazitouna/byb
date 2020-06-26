@@ -8926,23 +8926,8 @@ select {
   padding: 1rem;
 }
 
-.cirle-btn {
-  display: inline-block;
-  border-radius: 50%;
-  border: 1px solid #dee2e6;
-  height: 2.5rem;
-  width: 2.5rem;
-  text-align: center;
-  color: #8e9398;
-  padding: 0.5rem;
-  margin: 0 1rem;
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  text-align: center;
-}
-
-.bg-primary {
-  color: #fff;
+.add-row .bg-primary {
+  color: #fff !important;
   border: 1px solid #43c6ac;
 }
 
@@ -8979,24 +8964,6 @@ select {
   padding: 1rem;
   border-radius: 5px;
   font-size: 1.25rem;
-}
-
-.btn {
-  outline: none;
-  font-size: 1.25rem;
-}
-
-.btn i {
-  margin-left: 0.5rem;
-}
-
-.btn:focus, .btn .focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.btn-outline-primary:hover {
-  color: #fff !important;
 }
 
 .byb-number-spinner {
@@ -9094,7 +9061,7 @@ header a:hover {
 
 header i {
   color: #fff;
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
 }
 
 @media (min-width: 768px) {
@@ -9111,8 +9078,8 @@ header #top-navbar ul {
 header .notification-number {
   font-size: 0.75rem;
   position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   text-align: center;
   padding: 0.25rem 0 0 0.1rem;
   border-radius: 50%;
@@ -9120,9 +9087,9 @@ header .notification-number {
   font-weight: 500;
   background: #fc4a1a;
   color: #fff;
-  line-height: 1rem;
-  bottom: 1rem;
-  right: 1.25rem;
+  line-height: 0.75rem;
+  bottom: 1.25rem;
+  right: 0.85rem;
 }
 
 header .fa-bell {
@@ -9154,7 +9121,7 @@ header .dropdown-menu.show {
 }
 
 .home-link {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -9218,7 +9185,7 @@ footer i {
   padding: 7rem 15px;
 }
 
-#side-nav-left .nav-link i.fa {
+#side-nav-left .nav-link-icon i.fa, #side-nav-left .nav-link-icon .iconify {
   display: inline-block;
   border-radius: 50%;
   padding: 1rem;
@@ -9230,33 +9197,33 @@ footer i {
   text-align: center;
 }
 
-#side-nav-left .nav-link .fa-money {
+#side-nav-left .nav-link-icon .sub-menu-item-icon {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #43c6ac;
+  color: #fff;
+  font-size: 1.25rem !important;
+  width: 3rem !important;
+  height: 3rem !important;
+  text-align: center;
+}
+
+#side-nav-left .nav-link-icon .sub-menu-item-icon i.fa {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #43c6ac;
+  color: #fff;
+  font-size: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+}
+
+#side-nav-left .firs-child {
   background-color: rgba(0, 0, 0, 0.2) !important;
   color: #43c6ac !important;
-}
-
-#side-nav-left .nav-link .sub-menu-item-icon {
-  display: inline-block;
-  border-radius: 50%;
-  padding: 1rem;
-  background-color: #43c6ac;
-  color: #fff;
-  font-size: 1.25rem;
-  width: 3rem;
-  height: 3rem;
-  text-align: center;
-}
-
-#side-nav-left .nav-link .sub-menu-item-icon i.fa {
-  display: inline-block;
-  border-radius: 50%;
-  padding: 1rem;
-  background-color: #43c6ac;
-  color: #fff;
-  font-size: 1.25rem;
-  width: 3rem;
-  height: 3rem;
-  text-align: center;
 }
 
 #side-nav-left .active {
@@ -9532,7 +9499,7 @@ footer i {
 
 .redo-undo {
   width: 5rem;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 span.menu-option-label {
@@ -9629,6 +9596,10 @@ select {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+}
+
+select option:first-child {
+  color: #c0c0c0;
 }
 
 .select-icon {
@@ -9779,6 +9750,10 @@ tr {
   border-right: 1px solid #dee2e6;
 }
 
+.border-bottom-td {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
 .tr-custom-style {
   height: 3.5rem;
 }
@@ -9799,6 +9774,45 @@ tr {
 
 .name-row-column {
   color: #3333339e;
+}
+
+.btn {
+  outline: none;
+  font-size: 1.25rem;
+}
+
+.btn i {
+  margin-left: 0.5rem;
+}
+
+.btn:focus, .btn .focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-outline-primary:hover {
+  color: #43c6ac !important;
+  opacity: 0.6;
+}
+
+.btn-outline-primary:hover:active, .btn-outline-primary:hover:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.cirle-btn {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #dee2e6;
+  height: 2.5rem;
+  width: 2.5rem;
+  text-align: center;
+  color: #8e9398;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  text-align: center;
 }
 
 .bg-orange {
