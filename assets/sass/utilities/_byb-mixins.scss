@@ -1,0 +1,12 @@
+@mixin nav-link-icon ($background-color,$color,$font-size,$width,$height){
+    display: inline-block;
+    @include border-radius(50%) ;
+    padding: 1rem;
+    background-color: $background-color;
+    color:$color;
+  font-size: $font-size;
+  width: $width;
+  height: $height;
+  text-align: center;
+}
+  

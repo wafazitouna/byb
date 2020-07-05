@@ -1,122 +1,114 @@
 .left-column {
 
   box-shadow: 0 3px 5px 0 rgba(32, 33, 36, 0.18);
-  background-color:$bg-light;
+  background-color: $bg-light;
 }
+
 #side-nav-left {
   padding: 7rem 15px;
-    .nav-link-icon 
-    {
 
-            i.fa,.iconify {
-                display: inline-block;
-                border-radius: 50%;
-                padding: 1rem ;
-                background-color: $primary;
-                color:$white;
-              font-size: 1.5rem;
-              width: 3.5rem;
-              height: 3.5rem;
-              text-align: center;
-              }
-              
+  .nav-link-icon {
 
-              .sub-menu-item-icon{
-                display: inline-block;
-                border-radius: 50%;
-                padding: 1rem ;
-                background-color: $primary;
-                color:$white;
-              font-size: 1.25rem!important;
-              width: 3rem!important;
-              height: 3rem!important;
-              text-align: center;
-              i.fa {
-                display: inline-block;
-                border-radius: 50%;
-                padding: 1rem ;
-                background-color: $primary;
-                color:$white;
-              font-size: 1.25rem;
-              width: 3rem;
-              height: 3rem;
-              text-align: center;
-             
-              }
-              
-              }
-             
-    }
-    .firs-child{
-      background-color: rgba(0,0,0,0.2)!important;
-      color: $primary!important;
-    }
-    .active{
-        background-color: $orange!important;
-      }
+    i.fa,
+    .iconify,
+    .material-icons {
 
-    li{
-        padding-bottom: 1.5rem;
-        position: relative;
-        &:last-child{
-            padding-bottom: 0;
-        }
-    }
-    .text-menu{
-        color:$main-color-text;
-        padding-left: 1rem;
+      @include nav-link-icon($primary, $white, 1.5rem, 3.5rem, 3.5rem)
     }
 
 
-    .byb-sub-menu {
-      list-style: none;
+
+  }
+
+  .sub-menu-item-icon {
+
+    @include nav-link-icon($primary, $white, 1.25rem!important, 3rem!important, 3rem!important);
+
+    i.fa {
+      @include nav-link-icon($primary, $white, 1.25rem!important, 3rem!important, 3rem!important);
+
+    }
+
+  }
+
+  .firs-child {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    color: $primary !important;
+  }
+
+  .active {
+    background-color: $orange !important;
+  }
+
+  li {
+    padding-bottom: 1.5rem;
+    position: relative;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .text-menu {
+    color: $main-color-text;
+    padding-left: 1rem;
+  }
+
+
+  .byb-sub-menu {
+    list-style: none;
     padding-left: 1.75rem;
     border-left: 1px solid #ddd;
     margin-left: 1.25rem;
-         li {
 
-            &:first-child{
-                padding-top: 2rem;
-               
-            }
-            &:before{
-                content: "";
-                display: inline-block;
-                background-color: #ddd;
-                height: 0.15rem;
-                width: 4rem;
-                position: relative;
-                bottom: 0.5rem
-            }
-            &:last-child{
-                border-left: none;
-                &::after{
-                    content: "";
-                        height: 1.75rem;
-                        background: #ddd;
-                        width: 0.15rem;
-                        display: block;
-                        position: absolute;
-                        top: 0
-                }
-            }
-           
+    li {
+
+      &:first-child {
+        padding-top: 2rem;
+
+      }
+
+      &:before {
+        content: "";
+        display: inline-block;
+        background-color: #ddd;
+        height: 0.15rem;
+        width: 4rem;
+        position: relative;
+        bottom: 0.5rem
+      }
+
+      &:last-child {
+        border-left: none;
+
+        &::after {
+          content: "";
+          height: 1.75rem;
+          background: #ddd;
+          width: 0.15rem;
+          display: block;
+          position: absolute;
+          top: 0
         }
-    }
+      }
 
-    .add-submenu{
-      background-color: #f7f7f7!important;
-      border: 1px dashed #ddd;
-      color: $primary!important;
     }
-    .edit-menu {
-      right: 5rem;
-      position: absolute;
-      left: 9rem;
-      top: 1.75rem;
-      display: inline-block;
-      font-size: 1.25rem;
-    }
+  }
+
+  .add-submenu {
+    background-color: #f7f7f7 !important;
+    border: 1px dashed #ddd;
+    color: $primary !important;
+  }
+
+  .edit-menu {
+    right: 5rem;
+    position: absolute;
+    left: 9rem;
+    top: 1.75rem;
+    display: inline-block;
+    font-size: 1.25rem;
+  }
 }
 
 
@@ -126,36 +118,40 @@
  * ------------------------------
  */
 
- .tree,
- .tree ul {
-   margin:0 0 0 1em; /* indentation */
-   padding:0;
-   list-style:none;
-   color:#ddd;
-   position:relative;
- }
- 
+.tree,
+.tree ul {
+  margin: 0 0 0 1em;
+  /* indentation */
+  padding: 0;
+  list-style: none;
+  color: #ddd;
+  position: relative;
+}
 
 
- .tree {
+
+.tree {
 
   ul {
-    margin-left:.5em;
+    margin-left: .5em;
+
     &:before {
-      content:"";
-      display:block;
-      width:0;
-      position:absolute;
-      top:0;
-      bottom:0;
-      left:0;
-      border-left:1px solid;
+      content: "";
+      display: block;
+      width: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      border-left: 1px solid;
     }
   }
-  li{
+
+  li {
     margin: 0;
     padding: 0 1.75em;
-     &:before {
+
+    &:before {
       content: "";
       display: block;
       width: 24px;
@@ -165,21 +161,24 @@
       position: absolute;
       top: 1.75rem;
       left: 0;
-     }
-    &:first-child{
+    }
+
+    &:first-child {
       padding-top: 2rem;
+
       &:before {
-        height:auto;
+        height: auto;
         top: 3.5rem;
-        bottom:0;
-     }
-   }
-  &:last-child:before {
-    background-color: #fff;
-    height:auto;
-    top: 1.75rem;
-    bottom:0;
+        bottom: 0;
+      }
+    }
+
+    &:last-child:before {
+      background-color: #fff;
+      height: auto;
+      top: 1.75rem;
+      bottom: 0;
+    }
+
   }
-  
-  }
- }
+}
