@@ -84,8 +84,13 @@ body {
     height: 5.5rem;
 
 }
-#card4 textarea{
-    height: 10rem;
+#card4 {
+    .row-action{
+        right: 0;
+    }
+    textarea{
+        height: 10rem;
+    }
 }
 
 .dashbord-main-title{
