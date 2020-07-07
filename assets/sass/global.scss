@@ -74,7 +74,15 @@ body {
     height: 160px;
     .material-icons{
         font-size: 4rem;
+        margin-bottom: -0.5rem;
     }
+    p{
+        font-size: 1.3rem;
+    }
+}
+#card3 textarea{
+    height: 5.5rem;
+
 }
 #card4 textarea{
     height: 10rem;
@@ -115,4 +123,7 @@ body {
 .row-action {
     position: relative;
     right: 1rem;
+}
+.drag-drop-label{
+    font-size: 1.37rem;
 }

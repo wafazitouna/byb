@@ -8984,6 +8984,15 @@ select {
 
 .upload-image .material-icons {
   font-size: 4rem;
+  margin-bottom: -0.5rem;
+}
+
+.upload-image p {
+  font-size: 1.3rem;
+}
+
+#card3 textarea {
+  height: 5.5rem;
 }
 
 #card4 textarea {
@@ -9021,6 +9030,10 @@ select {
 .row-action {
   position: relative;
   right: 1rem;
+}
+
+.drag-drop-label {
+  font-size: 1.37rem;
 }
 
 header {
@@ -9408,6 +9421,10 @@ footer i {
   height: auto;
   top: 1.75rem;
   bottom: 0;
+}
+
+.tree .text-menu {
+  font-size: 1.15rem !important;
 }
 
 /** 
