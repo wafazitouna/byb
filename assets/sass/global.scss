@@ -42,9 +42,9 @@ body {
     border: 1px solid #eee;
     @include border-radius(0.75rem);
     color: $white;
-    width: 6rem;
-    height: 5.75rem;
-    margin: 0.25rem 0.25rem 0.25rem 0;
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: 0.25rem 0.7rem 0.25rem 0;
     i,.iconify,.material-icons{
         font-size: 2.25rem;
         margin-bottom: 0.25rem;
@@ -70,6 +70,7 @@ body {
         outline: none;
         width: 6rem;
         padding: 1rem 0.75rem;
+        background-color: #f7f7f7;
     }
     .input-group-btn{
         padding:  0.70rem;
@@ -98,6 +99,7 @@ body {
 
 .dashbord-main-title{
     border-bottom: 0.09rem solid #ccc;
+    font-size: 1.37rem;
 }
 
 .step-label{

@@ -9,22 +9,27 @@
 }
 
 .bg-gradient-30{
-    background: linear-gradient(30deg, #020024 0%, #1d4b5a 30%, #55e7ca 98%,  #00d4ff 100%);
+  //  background: linear-gradient(30deg, #020024 0%, #1d4b5a 30%, #55e7ca 98%,  #00d4ff 100%);
+    @include linear-gradient(30deg,$secondary, $secondary ,$primary, $primary);
 }
 
 .bg-gradient-60{
-    background: linear-gradient(60deg, #020024 0%, #1d4b5a 30%, #55e7ca 98%,  #00d4ff 100%);
+  //  background: linear-gradient(60deg, #020024 0%, #1d4b5a 30%, #55e7ca 98%,  #00d4ff 100%);
+    @include linear-gradient(60deg,$secondary, $secondary ,$primary, $primary);
 }
 
+
 .bg-gradient-90{
-    background: linear-gradient(90deg, #020024 0%, #1d4b5a 30%, #55e7ca 98%,  #00d4ff 100%);
+    @include linear-gradient(90deg,$secondary, $secondary ,$primary, $primary);
 }
 
 .bg-gradient-120{
-    background: linear-gradient(120deg, #020024 0%, #1d4b5a 30%, #55e7ca 98%,  #00d4ff 100%);
+    @include linear-gradient(120deg,$secondary, $secondary ,$primary, $primary);
 }
 
 .bg-gradient-180{
-    background: linear-gradient(180deg, #020024 0%, #1d4b5a 30%, #55e7ca 98%,  #00d4ff 100%);
+    @include linear-gradient(180deg,$secondary, $secondary ,$primary, $primary);
 }
-
+.bg-gradient-360{
+    @include linear-gradient(360deg,$secondary, $secondary ,$primary, $primary);
+}

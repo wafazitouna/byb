@@ -20,9 +20,6 @@ header {
         @media(min-width: 768px){
             padding: 0 1.75rem;
         }
-        // @media(min-width: 1200px){
-        //     padding: 0 3rem;
-        // }
        
     }
 #top-navbar ul{
@@ -75,17 +72,17 @@ span.menu-option-label {
 }
 }
 
-.home-link{
-   font-size: $header-con-size;
+.home-link span{
+   font-size: 2.5rem;
 }
 
 .mobile-menu-style{
     @media(max-width: 768px){
         width: 100%;
         position: absolute;
-        top: 4.10rem;
+        top: 4.65rem;
         z-index: 999;
-        background-color: #6f8098;
+        background-color: $secondary;
     }
     
 }

@@ -13,7 +13,7 @@
     .iconify,
     .material-icons {
 
-      @include nav-link-icon($primary, $white, 1.5rem, 3.5rem, 3.5rem)
+      @include nav-link-icon($primary, $white, 2rem, 3.75rem, 3.75rem)
     }
 
 
@@ -22,10 +22,10 @@
 
   .sub-menu-item-icon {
 
-    @include nav-link-icon($primary, $white, 1.25rem!important, 3rem!important, 3rem!important);
+    @include nav-link-icon($primary, $white, 1.5rem!important, 3rem!important, 3rem!important);
 
     i.fa {
-      @include nav-link-icon($primary, $white, 1.25rem!important, 3rem!important, 3rem!important);
+      @include nav-link-icon($primary, $white, 1.5rem!important, 3rem!important, 3rem!important);
 
     }
 
@@ -52,6 +52,7 @@
   .text-menu {
     color: $main-color-text;
     padding-left: 1rem;
+    font-size: 1.37rem;
   }
 
 
@@ -104,10 +105,20 @@
   .edit-menu {
     right: 5rem;
     position: absolute;
-    left: 9rem;
-    top: 1.75rem;
+    left: 10.5rem;
+    top: 1.65rem;
     display: inline-block;
     font-size: 1.25rem;
+  }
+
+  @media(max-width: 767px){
+    padding: 2rem 15px;
+    position: absolute;
+    z-index: 9999;
+    background-color: #f7f7f7;
+    box-shadow: 0 3px 5px 0 rgba(32, 33, 36, 0.18);
+    width: 100%;
+    top: 0;
   }
 }
 
@@ -174,7 +185,7 @@
     }
 
     &:last-child:before {
-      background-color: #fff;
+      background-color: #f7f7f7;
       height: auto;
       top: 1.75rem;
       bottom: 0;
