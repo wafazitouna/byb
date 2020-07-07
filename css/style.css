@@ -8995,6 +8995,10 @@ select {
   height: 5.5rem;
 }
 
+#card4 .row-action {
+  right: 0;
+}
+
 #card4 textarea {
   height: 10rem;
 }
@@ -9626,6 +9630,12 @@ span.menu-option-label {
 @media (min-width: 1200px) {
   .nav.nav-left {
     width: 37.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav.nav-left .menu-option {
+    width: 33.33%;
   }
 }
 
