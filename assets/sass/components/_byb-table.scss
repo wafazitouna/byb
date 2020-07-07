@@ -3,7 +3,7 @@
 .byb-table{
     color:$main-color-text;
     th, td {
-        width: 8rem;
+        width:14rem;
         padding: 0;
     }
     td{
@@ -13,7 +13,7 @@
 
     .remove-row-table {
         top: 1.75rem;
-        left: 57%;
+        left: 18%;
         color: #d6d6d6;
         &:before {
             content: "";

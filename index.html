@@ -50,21 +50,42 @@
     </header>
     <!--header end-->
 
-    <div class="dashboard-content d-flex flex-wrap">
-        <div class="col-12 col-lg-2 pr-0 pl-0 left-column">
+    <div class="dashboard-content d-flex flex-nowrap">
+        <div  id="side-nav-left" class="col-12 col-md-2 col-lg-2 pr-0 pl-0 left-column collapse navbar-collapse">
 
             <!--sidebar left start-->
-            <div id="side-nav-left" data-include="left-sidebar"></div>
+            <div data-include="left-sidebar"></div>
             <!--sidebar left end-->
         </div>
 
-        <div class="col-12 col-lg-10 p-0">
+        <div class="col-12 col-md-10 col-lg-10 p-0">
             <div class="wrapper_content">
+
+                 <!--mobile left sidebar and secondary menu-->
+                 <div class="mobile-menus d-md-none  pl-4 pr-4 d-flex align-items-center justify-content-between">
+                    <div class="left-sidebar-menu-mobile">
+                        <span  class="mr-3" data-toggle="collapse" data-target="#side-nav-left" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </span>
+                        <span class="active-menu">Lorem ips</span>
+                    </div>
+                    <div class="secondary-menu-mobile">
+                        <span  data-toggle="collapse" data-target="#secondary-menu" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+         
+            <!--end mobile left sidebar-->
+
 
                 <!--seconadry menu start-->
 
-                <div id="secondary-menu" class="col-12 secondary-menu  mb-4">
-                    <ul class="nav h-100">
+                <div id="secondary-menu" class="col-12 secondary-menu  mb-4 collapse navbar-collapse d-flex">
+                    <ul class="nav w-100 h-100">
+                       <ul  class="nav nav-left">
+
+                      
                         <li class="menu-option">
                             <div class="dropdown">
                                 <a class="btn d-flex align-items-center" href="#" role="button" id="dropdownMenuLinkCompany"
@@ -99,68 +120,74 @@
                             <i class="fa fa-undo redo-undo mr-0" aria-hidden="true"></i>
                             <i class="fa fa-repeat redo-undo" aria-hidden="true"></i>
                         </li>
-                        <li class="menu-option border-left-menu-option">
-                            <div class="dropdown">
-                                <a class="btn d-flex align-items-center" href="#" role="button" id="dropdownMenuLinkTutorial"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-video-camera" aria-hidden="true"></i>
-                                    <span class="menu-option-label">Tutorial</span>
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </a>
-
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkTutorial">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                    
+                    </ul>
+                        <ul id="right-options" class="nav nav-right collapse">
+                     
+                            <li  class="menu-option border-left-menu-option">
+                                <div class="dropdown">
+                                    <a class="btn d-flex align-items-center" href="#" role="button" id="dropdownMenuLinkTutorial"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-video-camera" aria-hidden="true"></i>
+                                        <span class="menu-option-label">Tutorial</span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </a>
+    
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkTutorial">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                    </div>
+                            </li>
+                            <li class="menu-option border-left-menu-option">
+                                <span class="material-icons">
+                                    remove_red_eye
+                                    </span>
+                                <span class="menu-option-label">Preview</span>
+                            </li>
+                            <li class="menu-option border-left-menu-option">
+                                <div class="dropdown">
+                                    <a class="btn d-flex align-items-center" href="#" role="button" id="dropdownMenuLinkExport"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-download" aria-hidden="true"></i>
+                                        <span class="menu-option-label">Export</span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </a>
+    
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkExport">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
                                 </div>
-                        </li>
-                        <li class="menu-option border-left-menu-option">
-                            <span class="material-icons">
-                                remove_red_eye
-                                </span>
-                            <span class="menu-option-label">Preview</span>
-                        </li>
-                        <li class="menu-option border-left-menu-option">
-                            <div class="dropdown">
-                                <a class="btn d-flex align-items-center" href="#" role="button" id="dropdownMenuLinkExport"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-download" aria-hidden="true"></i>
-                                    <span class="menu-option-label">Export</span>
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </a>
-
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkExport">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu-option border-left-menu-option">
-                            <span class="material-icons">
-                                share
-                                </span>
-                            <span class="menu-option-label">Share</span>
-                        </li>
-                        <li class="menu-option border-left-menu-option">
-                            <span class="material-icons">
-                                settings
-                                </span>
-                            <span class="menu-option-label">Settings</span>
+                            </li>
+                            <li class="menu-option border-left-menu-option">
+                                <span class="material-icons">
+                                    share
+                                    </span>
+                                <span class="menu-option-label">Share</span>
+                            </li>
+                            <li class="menu-option border-left-menu-option">
+                                <span class="material-icons">
+                                    settings
+                                    </span>
+                                <span class="menu-option-label">Settings</span>
+                            </li>
+                        </ul>
+                        
+                    </ul>
+                    <ul  class="nav nav-right-mobile d-none d-md-block d-xl-none">
+                        <li class="menu-option">
+                            <span  data-toggle="collapse" data-target="#right-options" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </span>
                         </li>
                     </ul>
                 </div>
                 <!--seconadry menu end-->
 
-                <!--mobile lft sidebar-->
-
-                    <div class="d-md-none">
-                        <span  class="mr-4" data-toggle="collapse" data-target="#side-nav-left" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                        </span>
-                    </div>
-             
-                <!--end mobile left sidebar-->
+               
 
                 <div class="content">
                     <div class="container-fluid">

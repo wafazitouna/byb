@@ -70,6 +70,9 @@ span.menu-option-label {
 .dropdown-menu.show {
     transform: translate3d(50px, 14px, 0px)!important;
 }
+span.menu-option-label{
+    font-size: 1.4rem;
+}
 }
 
 .home-link span{
@@ -78,7 +81,8 @@ span.menu-option-label {
 
 .mobile-menu-style{
     @media(max-width: 768px){
-        width: 100%;
+        min-width: 14rem;
+        right: 0;
         position: absolute;
         top: 4.65rem;
         z-index: 999;
@@ -87,12 +91,6 @@ span.menu-option-label {
     
 }
 
-.secondary-menu-mobile{
-    line-height: 4rem;
-    background-color: #f7f7f7;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
-    border: 0;
-    box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+.header-left-menu{
+    line-height: 1rem;
 }

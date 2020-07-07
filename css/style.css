@@ -8966,29 +8966,6 @@ select {
   font-size: 1.25rem;
 }
 
-.byb-number-spinner {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.byb-number-spinner .btn {
-  color: #43c6ac;
-  outline: none;
-}
-
-.byb-number-spinner input {
-  border: none;
-  outline: none;
-  width: 6rem;
-  padding: 1rem 0.75rem;
-  background-color: #f7f7f7;
-}
-
-.byb-number-spinner .input-group-btn {
-  padding: 0.70rem;
-}
-
 .image-preview {
   border-color: #43c6ac;
   border-radius: 0.75rem;
@@ -9122,13 +9099,18 @@ header .dropdown-menu.show {
           transform: translate3d(50px, 14px, 0px) !important;
 }
 
+header span.menu-option-label {
+  font-size: 1.4rem;
+}
+
 .home-link span {
   font-size: 2.5rem;
 }
 
 @media (max-width: 768px) {
   .mobile-menu-style {
-    width: 100%;
+    min-width: 14rem;
+    right: 0;
     position: absolute;
     top: 4.65rem;
     z-index: 999;
@@ -9136,19 +9118,8 @@ header .dropdown-menu.show {
   }
 }
 
-.secondary-menu-mobile {
-  line-height: 4rem;
-  background-color: #f7f7f7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
-  border: 0;
-  -webkit-box-shadow: 0 4px 6px 0 rgba(32, 33, 36, 0.28);
-          box-shadow: 0 4px 6px 0 rgba(32, 33, 36, 0.28);
+.header-left-menu {
+  line-height: 1rem;
 }
 
 footer {
@@ -9183,8 +9154,22 @@ footer i {
   background-color: rgba(0, 0, 0, 0.03);
 }
 
-#side-nav-left {
-  padding: 7rem 15px;
+@media (min-width: 768px) {
+  #side-nav-left.collapse:not(.show) {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #side-nav-left .nav.navbar-nav.side-nav {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #side-nav-left .nav.navbar-nav.side-nav {
+    padding: 7rem 15px;
+  }
 }
 
 #side-nav-left .nav-link-icon i.fa,
@@ -9276,6 +9261,12 @@ footer i {
   font-size: 1.37rem;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  #side-nav-left .text-menu {
+    display: none;
+  }
+}
+
 #side-nav-left .byb-sub-menu {
   list-style: none;
   padding-left: 1.75rem;
@@ -9320,7 +9311,7 @@ footer i {
 #side-nav-left .edit-menu {
   right: 5rem;
   position: absolute;
-  left: 10.5rem;
+  left: 60%;
   top: 1.65rem;
   display: inline-block;
   font-size: 1.25rem;
@@ -9335,7 +9326,24 @@ footer i {
     -webkit-box-shadow: 0 3px 5px 0 rgba(32, 33, 36, 0.18);
             box-shadow: 0 3px 5px 0 rgba(32, 33, 36, 0.18);
     width: 100%;
-    top: 0;
+    top: 10rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #side-nav-left .navbar-collapse.collapsing {
+    height: auto;
+    -webkit-transition: left 0.3s ease;
+    transition: left 0.3s ease;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #side-nav-left .navbar-collapse.show {
+    left: 0;
+    -webkit-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
   }
 }
 
@@ -9491,7 +9499,6 @@ footer i {
 }
 
 .menu-option {
-  width: 12.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9526,6 +9533,23 @@ footer i {
   }
 }
 
+@media (max-width: 767px) {
+  .menu-option {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .secondary-menu.collapse:not(.show) {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .secondary-menu {
   height: 4.5rem;
   -webkit-box-shadow: 0 3px 5px 0 rgba(32, 33, 36, 0.18);
@@ -9535,7 +9559,7 @@ footer i {
 
 @media (max-width: 767px) {
   .secondary-menu {
-    height: 100vh;
+    height: 36rem;
   }
 }
 
@@ -9556,6 +9580,81 @@ footer i {
 span.menu-option-label {
   min-width: 4rem;
   font-size: 1.25rem;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  ul#right-options {
+    background-color: #f7f7f7;
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    -webkit-box-shadow: 0 3px 5px 0 rgba(32, 33, 36, 0.18);
+            box-shadow: 0 3px 5px 0 rgba(32, 33, 36, 0.18);
+    z-index: 999;
+    top: 4.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 1rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav.nav-left {
+    width: 37.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  ul#right-options {
+    width: 62.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  ul#right-options .menu-option {
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  ul#right-options .menu-option {
+    padding: 1rem 0;
+    border-bottom: 0.15rem solid #ddd;
+    border-left: none;
+  }
+}
+
+ul#right-options .menu-option:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 992px) {
+  #right-options.collapse:not(.show) {
+    display: inherit;
+  }
+}
+
+@media (max-width: 767px) {
+  #right-options.collapse:not(.show) {
+    display: inherit;
+  }
+}
+
+.mobile-menus {
+  line-height: 4rem;
+  background-color: #f7f7f7;
+  font-size: 1.25rem;
+  border: 0;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(32, 33, 36, 0.28);
+          box-shadow: 0 4px 6px 0 rgba(32, 33, 36, 0.28);
 }
 
 .byb-form-control {
@@ -9661,13 +9760,42 @@ select option:first-child {
   font-size: 1.5rem;
 }
 
+.byb-number-spinner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.byb-number-spinner .btn {
+  color: #43c6ac;
+  outline: none;
+}
+
+.byb-number-spinner input {
+  border: none;
+  outline: none;
+  width: 6rem;
+  padding: 1rem 0.75rem;
+  background-color: #f7f7f7;
+}
+
+@media (max-width: 767px) {
+  .byb-number-spinner input {
+    width: 3rem;
+  }
+}
+
+.byb-number-spinner .input-group-btn {
+  padding: 0.70rem;
+}
+
 /**table***/
 .byb-table {
   color: #606060;
 }
 
 .byb-table th, .byb-table td {
-  width: 8rem;
+  width: 14rem;
   padding: 0;
 }
 
@@ -9677,7 +9805,7 @@ select option:first-child {
 
 .byb-table .remove-row-table {
   top: 1.75rem;
-  left: 57%;
+  left: 18%;
   color: #d6d6d6;
 }
 
@@ -9859,7 +9987,7 @@ tr {
   height: 2.5rem;
   width: 2.5rem;
   text-align: center;
-  color: #8e9398;
+  color: #c0c1c2;
   padding: 0.5rem;
   margin: 0 1rem;
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);

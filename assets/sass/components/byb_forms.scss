@@ -91,3 +91,24 @@
     right: 1.5rem;
     font-size: 1.5rem;
   }
+  .byb-number-spinner{
+    justify-content: center;
+    .btn{
+        color: $primary;
+        outline: none;
+    }
+    input{
+        border: none;
+        outline: none;
+        width: 6rem;
+        padding: 1rem 0.75rem;
+        background-color: #f7f7f7;
+        @media(max-width: 767px){
+          width: 3rem;
+        }
+    }
+    .input-group-btn{
+        padding:  0.70rem;
+    }
+   
+}
