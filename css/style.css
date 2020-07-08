@@ -8915,7 +8915,7 @@ a.text-secondary:hover, a.text-secondary:focus {
 body {
   font-family: "BigShouldersText", sans-serif;
   color: #606060;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 select {
@@ -8937,8 +8937,8 @@ select {
 }
 
 .color-item {
-  width: 4.25rem;
-  height: 3.25rem;
+  width: 3.75rem;
+  height: 3rem;
   margin-left: 0.5rem;
   border-radius: 0.5rem;
 }
@@ -8971,7 +8971,8 @@ select {
   border-radius: 0.75rem;
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  height: 15.25rem;
+  min-height: 15.25rem;
+  height: 100%;
 }
 
 .upload-image {
@@ -9038,6 +9039,10 @@ select {
 
 .drag-drop-label {
   font-size: 1.37rem;
+}
+
+.border-medium {
+  border-radius: 1rem !important;
 }
 
 header {
