@@ -8952,6 +8952,7 @@ select {
   width: 5.5rem;
   height: 5.5rem;
   margin: 0.25rem 0.7rem 0.25rem 0;
+  font-size: 1rem;
 }
 
 .square-colorful-bloc i, .square-colorful-bloc .iconify, .square-colorful-bloc .material-icons {
@@ -9043,6 +9044,14 @@ select {
 
 .border-medium {
   border-radius: 1rem !important;
+}
+
+.trumbowyg-button-pane, .trumbowyg-box .trumbowyg-editor {
+  background-color: #fff !important;
+}
+
+.trumbowyg-box, .trumbowyg-editor {
+  min-height: 200px !important;
 }
 
 header {
