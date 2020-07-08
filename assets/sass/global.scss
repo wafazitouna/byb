@@ -65,14 +65,14 @@ body {
     border-color: $primary;
     @include border-radius(0.75rem);
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    min-height: 15.25rem;
+    min-height: 15rem;
     height: 100%;
 }
 .upload-image{
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     color: #ddd;
     font-size: 2rem;
-    height: 160px;
+    height: 166px;
     .material-icons{
         font-size: 4rem;
         margin-bottom: -0.5rem;

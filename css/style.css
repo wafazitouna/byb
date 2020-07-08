@@ -8971,7 +8971,7 @@ select {
   border-radius: 0.75rem;
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  min-height: 15.25rem;
+  min-height: 15rem;
   height: 100%;
 }
 
@@ -8980,7 +8980,7 @@ select {
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   color: #ddd;
   font-size: 2rem;
-  height: 160px;
+  height: 166px;
 }
 
 .upload-image .material-icons {
