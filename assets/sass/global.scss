@@ -29,8 +29,8 @@ body {
 
 
 .color-item{
-    width: 3.75rem;
-    height: 3rem;
+    width: 4rem;
+    height: 3.25rem;
     margin-left: 0.5rem;
     @include border-radius(0.5rem);
 }
@@ -65,12 +65,12 @@ body {
 .image-preview{
     border-color: $primary;
     @include border-radius(0.75rem);
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    @include box-shadow( 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075));
     min-height: 15rem;
     height: 100%;
 }
 .upload-image{
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    @include box-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.075));
     color: #ddd;
     font-size: 2rem;
     height: 166px;
@@ -136,7 +136,7 @@ body {
 }
 
 .border-medium{
-    @include border-radius(1rem!important);
+    @include border-radius(0.5rem!important);
 }
 
 .trumbowyg-button-pane,.trumbowyg-box .trumbowyg-editor{
@@ -144,4 +144,5 @@ body {
 }
 .trumbowyg-box, .trumbowyg-editor{
     min-height: 200px!important;
+    margin-bottom: 0!important;
 }
