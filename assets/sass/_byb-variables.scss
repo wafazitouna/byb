@@ -12,13 +12,14 @@ $gray:#6f8099;
 $gray-400:#e9ecef96;
 $green:#43c6ac;
 $orange:#fc4a1a;
-
+$gray-light:#f7f7f7;
+$purple: #746EDC;
 
 $primary: $green;
 $secondary :$gray;
 $light: $gray-400;
 
-$bg-light:rgba(0, 0, 0, 0.03);
+$bg-light:$gray-light;
 
 $main-color-text:#606060;
 
@@ -27,11 +28,13 @@ $placeholder-color:#c0c0c0;
 $colors :(
     "green":      $green,
     "orange":     $orange,
-    "gray":       $gray
+    "gray":       $gray,
+    "purple":     $purple
   );
   
 $theme-colors: (
   "primary":$green,
-  "secondary":$gray
+  "secondary":$gray,
+  "purple":$purple
 
 );

@@ -1,0 +1,54 @@
+.byb-logo-header {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.byb-wrapper-login{
+    height: 100vh;
+}
+
+.byb-login-input{
+    width: 100%;
+        background-color:$bg-light;
+        border: none;
+        border-bottom: 1px solid $primary;
+        padding: 0.75rem   0;
+        outline: none;
+    
+}
+.byb-login-menu{
+    li{
+        padding: 0 1rem;
+    }
+    a{
+        color: $primary;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+
+.byb-btn-registration{
+    border-color: $purple;
+    color: $purple;
+}
+
+.byb-card-login{
+    border-radius: 0.5rem;
+    @include box-shadow( 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075));
+    height:fit-content;
+    @media(min-width:1199px){
+        width: 35%;
+      }
+      @media(min-width:768px)and(max-width:1198px){
+        width: 60%;
+      }
+}
+
+.byb-forgot-password{
+    color:$main-color-text;
+}
+
+.byb-login-btn:hover{
+    color:$white!important;
+}

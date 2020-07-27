@@ -1,9 +1,17 @@
+html {
+    height: 100%;
+  }
+  
 body {
      font-family: $font-main;
      color:$main-color-text;
-      font-size:1.25rem;;
+      font-size:1.25rem;
+      height: 100%;
  }
-
+ a:hover{
+     color:$primary;
+     text-decoration: none;
+ }
  select{
     color:$main-color-text; 
  }
@@ -26,7 +34,10 @@ body {
     border-style: dashed;
     border-width: 2px;
 }
-
+.border-dotted {
+    border-style: dotted;
+    border-width: 2px;
+}
 
 .color-item{
     width: 4rem;
