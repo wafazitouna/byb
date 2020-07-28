@@ -1,0 +1,38 @@
+.byb-company-logo-wrapper {
+    width: 13rem;
+    height: 15rem;
+    margin-left: auto;
+    @include border-radius(0.35rem);
+    .byb-company-logo-content{
+        line-height: 13rem;
+        color: $white;
+    }
+}
+
+.byb-company-cap-table {
+    display: inline-table;
+    thead th{
+        border-bottom: 2px solid $primary;
+        color:#757575a8;
+    }
+    th{
+        padding-left: 0!important;
+        border-top: none;
+    }
+    tfoot{
+        border-top: 2px solid $primary;
+    }
+    td{
+        border: none;
+    }
+    .first-row-cap {
+        td,th{
+            padding-top: 3rem;
+        }
+    }
+    .last-row-cap {
+        td,th{
+            padding-bottom: 3rem;
+        }
+    }
+}

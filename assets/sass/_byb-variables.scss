@@ -14,6 +14,7 @@ $green:#43c6ac;
 $orange:#fc4a1a;
 $gray-light:#f7f7f7;
 $purple: #746EDC;
+$dark-gray:#7D8CA3;
 
 $primary: $green;
 $secondary :$gray;
@@ -29,12 +30,14 @@ $colors :(
     "green":      $green,
     "orange":     $orange,
     "gray":       $gray,
-    "purple":     $purple
+    "purple":     $purple,
+    "dark-gray": $dark-gray
   );
   
 $theme-colors: (
   "primary":$green,
   "secondary":$gray,
-  "purple":$purple
+  "purple":$purple,
+  "dark-gray": $dark-gray
 
 );

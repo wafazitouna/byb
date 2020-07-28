@@ -8,6 +8,9 @@
     background: rgb(2,0,36);  
 }
 
+.bg-light{
+    background-color: $bg-light!important;
+}
 .bg-gradient-30{
   //  background: linear-gradient(30deg, #020024 0%, #1d4b5a 30%, #55e7ca 98%,  #00d4ff 100%);
     @include linear-gradient(30deg,$secondary, $secondary ,$primary, $primary);
