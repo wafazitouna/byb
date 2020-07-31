@@ -10691,4 +10691,129 @@ input.byb-search-input:before {
   position: absolute;
   right: 0;
 }
+
+.byb-company-logo-wrapper {
+  width: 13rem;
+  height: 15rem;
+  margin-left: auto;
+  border-radius: 0.35rem;
+}
+
+.byb-company-logo-wrapper .byb-company-logo-content {
+  line-height: 13rem;
+  color: #fff;
+}
+
+.byb-company-cap-table {
+  display: inline-table;
+}
+
+.byb-company-cap-table thead th {
+  border-bottom: 2px solid #43c6ac;
+  color: #757575a8;
+}
+
+.byb-company-cap-table th {
+  padding-left: 0 !important;
+  border-top: none;
+}
+
+.byb-company-cap-table tfoot {
+  border-top: 2px solid #43c6ac;
+}
+
+.byb-company-cap-table td {
+  border: none;
+}
+
+.byb-company-cap-table .first-row-cap td, .byb-company-cap-table .first-row-cap th {
+  padding-top: 3rem;
+}
+
+.byb-company-cap-table .last-row-cap td, .byb-company-cap-table .last-row-cap th {
+  padding-bottom: 3rem;
+}
+
+.byb-logo-header {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.byb-wrapper-login {
+  height: 100vh;
+}
+
+.byb-login-input {
+  width: 100%;
+  background-color: #f7f7f7;
+  border: none;
+  border-bottom: 1px solid #43c6ac;
+  padding: 0.75rem   0;
+  outline: none;
+}
+
+.byb-login-menu li {
+  padding: 0 1rem;
+}
+
+.byb-login-menu a {
+  color: #43c6ac;
+}
+
+.byb-login-menu a:hover {
+  opacity: 0.8;
+}
+
+.byb-btn-registration {
+  border-color: #746EDC;
+  color: #746EDC;
+}
+
+.byb-card-login {
+  border-radius: 0.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media (min-width: 1199px) {
+  .byb-card-login {
+    width: 35%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1198px) {
+  .byb-card-login {
+    width: 60%;
+  }
+}
+
+.byb-forgot-password {
+  color: #606060;
+}
+
+.byb-login-btn:hover {
+  color: #fff !important;
+}
+
+.byb-companies {
+  display: inline-table;
+}
+
+.byb-companies thead th {
+  color: #43c6ac;
+  border-bottom: 2px solid #43c6ac;
+  border-top: none;
+  padding-left: 0;
+}
+
+.byb-companies .table-options .material-icons {
+  font-size: inherit;
+}
+
+.byb-companies td {
+  color: #8B8B8B;
+  border-top: none;
+  padding-left: 0;
+}
 /*# sourceMappingURL=style.css.map */

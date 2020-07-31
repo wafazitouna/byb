@@ -1,0 +1,19 @@
+.byb-companies{
+display: inline-table;
+thead th{
+    color:$primary;
+    border-bottom: 2px solid$primary;
+    border-top: none;
+    padding-left: 0;
+}
+.table-options{
+    .material-icons{
+        font-size: inherit;
+    }
+}
+td{
+    color:#8B8B8B;
+    border-top: none;
+    padding-left: 0;
+}
+}
