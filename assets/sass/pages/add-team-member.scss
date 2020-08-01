@@ -1,0 +1,14 @@
+#add-team-member{
+    .form-title{
+        color:$primary;
+    }
+    .section-form-separation{
+       height: 2px;
+       background-color: $primary;
+    }
+    .byb-radio-btn{
+        @media(min-width: 768px){
+            width: 80%;
+        }
+    }
+}

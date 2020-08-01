@@ -10816,4 +10816,19 @@ input.byb-search-input:before {
   border-top: none;
   padding-left: 0;
 }
+
+#add-team-member .form-title {
+  color: #43c6ac;
+}
+
+#add-team-member .section-form-separation {
+  height: 2px;
+  background-color: #43c6ac;
+}
+
+@media (min-width: 768px) {
+  #add-team-member .byb-radio-btn {
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
