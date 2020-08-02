@@ -10083,19 +10083,23 @@ ul#right-options .menu-option:last-child {
   color: #c0c0c0;
 }
 
-.byb-form-control:-ms-input-placeholder {
+::-webkit-input-placeholder {
   color: #c0c0c0;
 }
 
-.byb-form-control::-ms-input-placeholder {
+:-ms-input-placeholder {
   color: #c0c0c0;
 }
 
-.byb-form-control::placeholder {
+::-ms-input-placeholder {
   color: #c0c0c0;
 }
 
-.byb-form-control:-ms-input-placeholder {
+::placeholder {
+  color: #c0c0c0;
+}
+
+:-ms-input-placeholder {
   color: #c0c0c0;
 }
 
@@ -10143,6 +10147,75 @@ select option:first-child {
 
 .byb-number-spinner .input-group-btn {
   padding: 0.70rem;
+}
+
+/***checkbox**************/
+.wrapper-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.wrapper-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+}
+
+/* On mouse-over, add a grey background color */
+.wrapper-checkbox:hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.wrapper-checkbox input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.wrapper-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.wrapper-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #43c6ac;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /**table***/
@@ -10326,14 +10399,20 @@ tr {
           box-shadow: none;
 }
 
+.btn-outline-primary {
+  background-color: #fff;
+}
+
 .btn-outline-primary:hover {
   color: #43c6ac !important;
   opacity: 0.6;
+  background-color: #fff;
 }
 
 .btn-outline-primary:hover:active, .btn-outline-primary:hover:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+  background-color: #fff;
 }
 
 .cirle-btn {
@@ -10536,8 +10615,15 @@ tr {
   color: #746EDC;
 }
 
+.byb-btn-registration:hover {
+  color: #746EDC;
+  opacity: 0.8;
+}
+
 .byb-card-login {
   border-radius: 0.5rem;
+  -webkit-box-shadow: 0.25rem 0 0.5rem white;
+          box-shadow: 0.25rem 0 0.5rem white;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -10783,8 +10869,15 @@ input.byb-search-input:before {
   color: #746EDC;
 }
 
+.byb-btn-registration:hover {
+  color: #746EDC;
+  opacity: 0.8;
+}
+
 .byb-card-login {
   border-radius: 0.5rem;
+  -webkit-box-shadow: 0.25rem 0 0.5rem white;
+          box-shadow: 0.25rem 0 0.5rem white;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

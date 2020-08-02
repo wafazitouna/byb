@@ -8,13 +8,20 @@
         box-shadow: none;
     }
 }
-.btn-outline-primary:hover{
+.btn-outline-primary{
+    background-color: $white;
+
+&:hover{
     color:$primary!important;
     opacity: 0.6;
+    background-color: $white;
     &:active,&:focus{
         box-shadow: none;
+        background-color: $white;
     }
 }
+}
+
 .cirle-btn {
     display: inline-block;
     @include border-radius(50%);

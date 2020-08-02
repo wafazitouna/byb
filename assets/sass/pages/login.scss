@@ -15,6 +15,7 @@
         padding: 0.75rem   0;
         outline: none;
     
+    
 }
 .byb-login-menu{
     li{
@@ -31,11 +32,15 @@
 .byb-btn-registration{
     border-color: $purple;
     color: $purple;
+    &:hover{
+        color:$purple;
+        opacity: 0.8;
+    }
 }
 
 .byb-card-login{
     border-radius: 0.5rem;
-    @include box-shadow( 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075));
+    box-shadow:  0.25rem 0 0.5rem white;
     height:fit-content;
     @media(min-width:1199px){
         width: 35%;
