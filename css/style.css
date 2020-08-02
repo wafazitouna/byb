@@ -9374,6 +9374,20 @@ select {
   color: red;
 }
 
+.aligned-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.aligned-row:before {
+  display: block;
+}
+
 header {
   line-height: 2.5rem;
   border-bottom: 0.25rem solid #43c6ac;
@@ -10830,5 +10844,24 @@ input.byb-search-input:before {
   #add-team-member .byb-radio-btn {
     width: 80%;
   }
+}
+
+.account-section-title {
+  color: #43c6ac;
+  border-bottom: 2px solid #43c6ac;
+}
+
+.info-label {
+  color: #43c6ac;
+}
+
+.account-menu .menu-item {
+  text-align: center;
+  border-bottom: 2px solid;
+}
+
+.account-menu .active-menu {
+  color: #43c6ac;
+  background-color: transparent !important;
 }
 /*# sourceMappingURL=style.css.map */
