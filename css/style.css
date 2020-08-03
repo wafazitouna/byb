@@ -10606,10 +10606,8 @@ select option:first-child {
 @media (max-width: 767px) {
   #timeline-wrap .timeline-icon {
     position: absolute;
-    -webkit-transform: rotate(324deg);
-            transform: rotate(324deg);
-    left: -46px;
-    top: -4rem;
+    left: -3.5rem;
+    top: -1.35rem;
   }
 }
 
@@ -10618,14 +10616,28 @@ select option:first-child {
   position: absolute;
   width: 0;
   height: 0;
-  left: 14px;
   right: auto;
-  top: 48px;
   bottom: auto;
   border: 12px solid;
   border-color: #43c6ac #43c6ac transparent transparent;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+}
+
+@media (min-width: 768px) {
+  #timeline-wrap .timeline-icon:after {
+    left: 14px;
+    top: 48px;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
+@media (max-width: 767px) {
+  #timeline-wrap .timeline-icon:after {
+    left: 52px;
+    top: 30px;
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+  }
 }
 
 #timeline-wrap .timeline-icon .fa {
@@ -10660,12 +10672,25 @@ select option:first-child {
 
 #timeline:before {
   content: "";
-  height: 2px;
-  width: 25%;
   background-color: #7D8CA3;
   display: block;
-  right: 0;
   position: absolute;
+}
+
+@media (min-width: 768px) {
+  #timeline:before {
+    height: 2px;
+    width: 25%;
+    right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #timeline:before {
+    height: 9rem;
+    width: 2px;
+    bottom: 0;
+  }
 }
 
 .marker {
