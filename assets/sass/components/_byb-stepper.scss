@@ -27,16 +27,12 @@
     top: 1rem;
 }
 
- .nav-tabs > li {
-    width: 33.33%;
-   
-}
 
 .connecting-line {
     height: 1px;
     background: $primary;
     position: absolute;
-    width: 90%;
+    width: 95%;
     margin: 0;
     left: 1rem;
     right: 0;
@@ -44,6 +40,10 @@
 }
 .byb-steps {
     height: 5rem;
+    .nav-tabs{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 .stepper-label {
     position: relative;
@@ -51,19 +51,13 @@
     font-size: 1rem;
     color:$main-color-text;
     left: -2rem;
+    @media(max-width: 767px){
+        display: none;
+    }
 }
 
-.first-step{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
 
 .second-step{
- 
-    display: flex;
-    justify-content: center;
-    align-items: center;
     .stepper-label{
         left: -1rem;
     }
@@ -71,7 +65,14 @@
 
 
 .third-step{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    .step-number{
+        @media(min-width: 768px){
+            right: 0;
+            left: auto;
+        }
+        
+    }
+    .stepper-label{
+        left: 1rem;
+    }
 }

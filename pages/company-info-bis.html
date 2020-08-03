@@ -44,22 +44,27 @@
 
 
 </head>
-<body>
+<body  id="company">
 
   <!--header start-->
-  <header class="bg-secondary">
-   <div class="container-fluid">
-    <nav  id="top-navbar" class="navbar navbar-expand-lg justify-content-end">
-
-        <ul class="navbar-nav">
-            <li class="nav-item"> <a class="nav-link" href="#">My Account</a></li>
-            <li class="nav-item"> <a class="nav-link" href="#">Help</a></li>
-            <li class="nav-item"> <a class="nav-link" href="#">Logout</a></li>
-
-        </ul>
-        </nav>
-   </div>
-</header>
+  <header class="bg-secondary d-flex align-items-center">
+    <div class="container-fluid">
+     <div class="nav-item d-lg-none d-flex align-items-center justify-content-end">
+         <span  class="mr-4" data-toggle="collapse" data-target="#top-navbar" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+             <i class="fa fa-bars" aria-hidden="true"></i>
+         </span>
+     </div>
+     <nav    id="top-navbar" class="navbar navbar-expand-lg   mobile-menu-style collapse navbar-collapse ">
+ 
+         <ul class="navbar-nav">
+             <li class="nav-item"> <a class="nav-link" href="#">My Account</a></li>
+             <li class="nav-item"> <a class="nav-link" href="#">Help</a></li>
+             <li class="nav-item"> <a class="nav-link" href="#">Logout</a></li>
+ 
+         </ul>
+         </nav>
+    </div>
+ </header>
 <!--header end-->
 <div class="wrapper-page">
     <div class="container">
@@ -100,7 +105,7 @@
                 <!-- This is the individual marker-->
                 <div class="time-line-step mfirst">
                     <div class=" timeline-icon">
-                        <i class="fa fa-pencil"></i>
+                        <i class="fa fa-lightbulb-o"></i>
                     </div>
                     <div class="marker-wrapper ">
                         <div class="marker">
@@ -118,7 +123,7 @@
                 <!-- This is the individual marker-->
                 <div class="time-line-step m2">
                     <div class=" timeline-icon">
-                        <i class="fa fa-pencil"></i>
+                        <i class="fa fa-plane" aria-hidden="true"></i>
                     </div>
                     <div class="marker-wrapper ">
                         <div class="marker">
@@ -191,7 +196,7 @@
             
         </div>
         <div class="col-12 mt-4 text-center">
-            <button type="button" class="btn btn-dark-gray btn-lg">Back</button>
+            <button type="button" class="btn btn-dark-gray btn-lg mb-md-0 mb-4">Back</button>
             <button type="button" class="btn btn-purple btn-lg">Next</button>
         </div>
     </div>

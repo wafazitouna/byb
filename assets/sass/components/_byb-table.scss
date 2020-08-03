@@ -37,12 +37,17 @@
             transform: rotate(-75deg) translateY(-16px) translateX(5px);
         }
     }
-    
+    td:first-child {
+        width: 6rem;
+    }
+
+    tr{
+        height: 5rem;
+        
+    }
 }
 
-td:first-child {
-    width: 6rem;
-}
+
 .add-colum-left{
     left:  -10.25px;
     top:2rem;
@@ -92,10 +97,7 @@ td:first-child {
     }
 }
 
-tr{
-    height: 5rem;
-    
-}
+
 
 .add-row-top{
     top: -10px;

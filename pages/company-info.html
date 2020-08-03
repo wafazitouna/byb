@@ -44,12 +44,17 @@
 
 
 </head>
-<body>
+<body id="company">
 
   <!--header start-->
-  <header class="bg-secondary">
+  <header class="bg-secondary d-flex align-items-center">
    <div class="container-fluid">
-    <nav  id="top-navbar" class="navbar navbar-expand-lg justify-content-end">
+    <div class="nav-item d-lg-none d-flex align-items-center justify-content-end">
+        <span  class="mr-4" data-toggle="collapse" data-target="#top-navbar" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </span>
+    </div>
+    <nav    id="top-navbar" class="navbar navbar-expand-lg   mobile-menu-style collapse navbar-collapse ">
 
         <ul class="navbar-nav">
             <li class="nav-item"> <a class="nav-link" href="#">My Account</a></li>

@@ -1,32 +1,60 @@
 
 
 #timeline-wrap{
-    margin:15% 5%;
+    margin:6% 15%;
     position:relative;
     .time-line-step{
-    position: relative;
-    display: inline-block
+      position: relative;
+      @media(min-width: 768px){
+      
+        display: inline-block
+      }
+      @media(max-width: 767px){
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 5rem;
+      }
     }
    .info{
-    font-size: 0.85rem;
-    top: 1rem;
-    position: absolute;
+    font-size: 1rem;
     text-align: center;
-    margin-left: -90px;
     width: 200px;
+    @media(min-width: 768px){
+      position: absolute;
+      margin-left: -90px;
+      top: 1rem;
+    }
+    @media(max-width: 767px){
+      top: -3rem;
+      margin-left: 1.75rem;
+      position: relative;
+  
+    }
    }
    .timeline-icon {
-    top: -100px;
-    position: absolute;
+    
     width: 65px;
     height: 65px;
     background-color: $primary;
     @include border-radius(50%);
-    margin-left: -20px;
     display: flex;
     justify-content: center;
     align-items: center;
 
+    @media(min-width:768px){
+      top: -100px;
+      position: absolute;
+      margin-left: -20px;
+    }
+    @media(max-width:767px){
+
+      position: absolute;
+      transform: rotate(324deg);
+      left: -46px;
+      top: -4rem;
+    }
 
 &:after{
   content: ' ';
@@ -45,16 +73,38 @@
 .fa{
     color: $white;
     font-size: 1.25rem;
+    margin: 0 0.10rem;
 }
 
 }
   }
   
   #timeline{
-    height:2px;
-    width: 100%;
     background-color:$primary;
-    position:relative;
+    @media(min-width:768px){
+      height:2px;
+      width: 100%;
+      
+      position:relative;
+    }
+    @media(max-width:767px){
+      height: 38rem;
+      width: 2px;
+      position: absolute;
+      display: inline-block;
+      left: 2rem;
+      top: 1rem;
+      z-index: 0
+    }
+    &:before {
+      content: "";
+      height: 2px;
+      width: 25%;
+      background-color: $dark-gray;
+      display: block;
+      right: 0;
+      position: absolute;
+  }
    
   }
   
@@ -67,14 +117,28 @@
        position: relative;
        background-color:$bg-light;
        @include border-radius (50%);
-       top: -12px;
+
        display: flex;
        justify-content: center;
+       @media(min-width: 768px){
+        top: -15px;
+      }
+      @media(max-width: 767px){
+        left: 22px;
+      }
        .marker-child{
         background-color:$primary;
         width: 18px;
         height: 18px;
         @include border-radius (50%);
+        @media(min-width: 768px){
+          top: -15px;
+        }
+        @media(max-width: 767px){
+          top: 0.15rem;
+          position: relative;
+          left: -0.15rem;
+        }
        }
 }
 
@@ -92,27 +156,40 @@
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
-   }
+}
   
-
+.mfirst {
+  @media(min-width: 768px){
+    margin-left: -20px;
+  }
+   
+}
 
   .m2{
-
-        left:22%
+    @media(min-width: 768px){
+      left:22%
+    }
+       
   }
   
   .m3{
-
+    @media(min-width: 768px){
       left:44%
+    }
+     
   }
   
   .m4{
+    @media(min-width: 768px){
+      left:66%
+    }
 
-    left:66%
   }
   .mlast{
-
+    @media(min-width: 768px){
       left:88%;
+    }
+   
       .timeline-icon, .marker-child{
         background-color:$dark-gray!important;
         &:after{

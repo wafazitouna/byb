@@ -1,3 +1,8 @@
+#company{
+    header{
+        height: 68px;
+    }
+}
 .byb-company-logo-wrapper {
     width: 13rem;
     height: 15rem;
@@ -7,9 +12,16 @@
         color: $white;
     }
 }
-
+.wrapper-table-company-cap{
+    @media(max-width: 767px){
+       width: 700px;
+        overflow-x: auto;
+    }
+  
+}
 .byb-company-cap-table {
     display: inline-table;
+
     thead th{
         border-bottom: 2px solid $primary;
         color:#757575a8;
