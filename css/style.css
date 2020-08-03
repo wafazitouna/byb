@@ -9366,11 +9366,7 @@ select {
 
 .wrapper-page {
   padding: 3rem 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   height: 100vh;
-  overflow: auto;
 }
 
 .requied-field {
@@ -10983,6 +10979,20 @@ select option:first-child {
 }
 
 .byb-create-bloc p {
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  .byb-create-bloc {
+    margin: auto;
+  }
+}
+
+.icon-text-wrapper.active-bloc, .message-notification {
+  color: #43c6ac;
+}
+
+.message-notification {
   font-size: 1rem;
 }
 

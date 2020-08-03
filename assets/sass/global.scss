@@ -159,9 +159,7 @@ body {
 }
 .wrapper-page {
     padding: 3rem 0;
-    flex: 1 1 auto;
-    height: 100vh;
-    overflow: auto;
+    min-height: 100vh;
 }
 
 .requied-field {

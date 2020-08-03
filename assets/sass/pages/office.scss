@@ -29,6 +29,16 @@ $bloc-height:22rem;
     p{
         font-size: 1rem;
     }
+    @media(max-width: 767px){
+        margin: auto;
+    }
+}
+.icon-text-wrapper.active-bloc,.message-notification{
+    color: $primary;
+    
+}
+.message-notification {
+    font-size: 1rem;
 }
 .byb-bloc-office-slide{
     height: $bloc-height;
