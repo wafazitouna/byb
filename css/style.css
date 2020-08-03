@@ -10470,8 +10470,8 @@ tr {
 }
 
 .connecting-line {
-  height: 2px;
-  background: #e0e0e0;
+  height: 1px;
+  background: #43c6ac;
   position: absolute;
   width: 90%;
   margin: 0;
@@ -10530,6 +10530,126 @@ tr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#timeline-wrap {
+  margin: 15% 5%;
+  position: relative;
+}
+
+#timeline-wrap .time-line-step {
+  position: relative;
+  display: inline-block;
+}
+
+#timeline-wrap .info {
+  font-size: 0.85rem;
+  top: 1rem;
+  position: absolute;
+  text-align: center;
+  margin-left: -90px;
+  width: 200px;
+}
+
+#timeline-wrap .timeline-icon {
+  top: -100px;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background-color: #43c6ac;
+  border-radius: 50%;
+  margin-left: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#timeline-wrap .timeline-icon:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 14px;
+  right: auto;
+  top: 48px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: #43c6ac #43c6ac transparent transparent;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+#timeline-wrap .timeline-icon .fa {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+#timeline {
+  height: 2px;
+  width: 100%;
+  background-color: #43c6ac;
+  position: relative;
+}
+
+.marker {
+  z-index: 1000;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  position: relative;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  top: -12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.marker .marker-child {
+  background-color: #43c6ac;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.marker:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.m2 {
+  left: 22%;
+}
+
+.m3 {
+  left: 44%;
+}
+
+.m4 {
+  left: 66%;
+}
+
+.mlast {
+  left: 88%;
+}
+
+.mlast .timeline-icon, .mlast .marker-child {
+  background-color: #7D8CA3 !important;
+}
+
+.mlast .timeline-icon:after, .mlast .marker-child:after {
+  border-color: #7D8CA3 #7D8CA3 transparent transparent !important;
 }
 
 .bg-orange {
@@ -10652,7 +10772,6 @@ tr {
 .byb-company-logo-wrapper {
   width: 13rem;
   height: 15rem;
-  margin-left: auto;
   border-radius: 0.35rem;
 }
 
@@ -10795,7 +10914,6 @@ input.byb-search-input:before {
 .byb-company-logo-wrapper {
   width: 13rem;
   height: 15rem;
-  margin-left: auto;
   border-radius: 0.35rem;
 }
 

@@ -1,0 +1,125 @@
+
+
+#timeline-wrap{
+    margin:15% 5%;
+    position:relative;
+    .time-line-step{
+    position: relative;
+    display: inline-block
+    }
+   .info{
+    font-size: 0.85rem;
+    top: 1rem;
+    position: absolute;
+    text-align: center;
+    margin-left: -90px;
+    width: 200px;
+   }
+   .timeline-icon {
+    top: -100px;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background-color: $primary;
+    @include border-radius(50%);
+    margin-left: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+&:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 14px;
+  right: auto;
+  top: 48px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: $primary $primary transparent transparent;
+  transform: rotate(20deg);
+}
+
+.fa{
+    color: $white;
+    font-size: 1.25rem;
+}
+
+}
+  }
+  
+  #timeline{
+    height:2px;
+    width: 100%;
+    background-color:$primary;
+    position:relative;
+   
+  }
+  
+
+    .marker{
+        z-index:1000;
+       width: 25px;
+       height: 25px;
+       text-align: center;
+       position: relative;
+       background-color:$bg-light;
+       @include border-radius (50%);
+       top: -12px;
+       display: flex;
+       justify-content: center;
+       .marker-child{
+        background-color:$primary;
+        width: 18px;
+        height: 18px;
+        @include border-radius (50%);
+       }
+}
+
+
+  
+   .marker:hover{
+     -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+     
+     -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+   }
+  
+
+
+  .m2{
+
+        left:22%
+  }
+  
+  .m3{
+
+      left:44%
+  }
+  
+  .m4{
+
+    left:66%
+  }
+  .mlast{
+
+      left:88%;
+      .timeline-icon, .marker-child{
+        background-color:$dark-gray!important;
+        &:after{
+          border-color: $dark-gray $dark-gray transparent transparent!important;
+        }
+      }
+      
+  }
+
+  
