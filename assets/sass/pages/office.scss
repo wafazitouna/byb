@@ -9,6 +9,14 @@ $bloc-height:22rem;
             text-align: center;
     }
     }
+    .slider-content{
+        
+        display: flex;
+        flex-wrap: wrap;
+        @media(min-width: 1200px){
+            padding: 0 8%;
+        }
+    }
 }
 .byb-line-heading{
     background: $dark-gray;
@@ -86,10 +94,10 @@ input.byb-search-input{
     font-size: 3rem;
     .fa-angle-left{
         position: absolute;
-        left: 0;
+        left: 1%;
     }
     .fa-angle-right{
         position: absolute;
-        right: 0;
+        right: 1%;
     }
 }

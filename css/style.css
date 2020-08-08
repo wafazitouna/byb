@@ -9366,7 +9366,6 @@ select {
 
 .wrapper-page {
   padding: 3rem 0;
-  height: 100vh;
 }
 
 .requied-field {
@@ -9390,6 +9389,7 @@ select {
 }
 
 header {
+  height: 68px;
   line-height: 2.5rem;
   border-bottom: 0.25rem solid #43c6ac;
   color: #fff;
@@ -10900,10 +10900,6 @@ select option:first-child {
   color: #fff !important;
 }
 
-#company header {
-  height: 68px;
-}
-
 .byb-company-logo-wrapper {
   width: 13rem;
   height: 15rem;
@@ -10956,6 +10952,20 @@ select option:first-child {
   font-size: 1.5rem;
   color: #7D8CA3;
   text-align: center;
+}
+
+#office .slider-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+  #office .slider-content {
+    padding: 0 8%;
+  }
 }
 
 .byb-line-heading {
@@ -11059,16 +11069,12 @@ input.byb-search-input:before {
 
 .byb-slide-arrows .fa-angle-left {
   position: absolute;
-  left: 0;
+  left: 1%;
 }
 
 .byb-slide-arrows .fa-angle-right {
   position: absolute;
-  right: 0;
-}
-
-#company header {
-  height: 68px;
+  right: 1%;
 }
 
 .byb-company-logo-wrapper {
@@ -11197,6 +11203,7 @@ input.byb-search-input:before {
   border-bottom: 2px solid #43c6ac;
   border-top: none;
   padding-left: 0;
+  font-weight: 200;
 }
 
 .byb-companies .table-options .material-icons {
