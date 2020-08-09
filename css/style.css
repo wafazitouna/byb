@@ -9403,10 +9403,6 @@ select {
   white-space: nowrap;
 }
 
-.table-options {
-  opacity: 0.6;
-}
-
 header {
   height: 68px;
   line-height: 2.5rem;
@@ -11224,6 +11220,12 @@ input.byb-search-input:before {
   border-top: none;
   padding-left: 0;
   font-weight: normal;
+}
+
+.byb-table-companies .table-options {
+  font-size: 1.25rem;
+  text-align: center;
+  opacity: 0.6;
 }
 
 .byb-table-companies .table-options .material-icons {
