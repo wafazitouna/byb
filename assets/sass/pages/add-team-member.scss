@@ -1,14 +1,30 @@
 #add-team-member{
+    color:#606060b5;
     .form-title{
         color:$primary;
     }
     .section-form-separation{
-       height: 2px;
+       height: 1px;
        background-color: $primary;
     }
     .byb-radio-btn{
         @media(min-width: 768px){
             width: 80%;
         }
+    }
+    .section-form-title{
+        font-weight: 600;
+    }
+    .checkmark{
+        border:1px solid $primary;
+        height: 20px;
+        width: 20px;
+        &:after{
+            left: 7px;
+            top: 3px;
+        }
+    }
+    .wrapper-checkbox{
+        margin-bottom: 30px;
     }
 }

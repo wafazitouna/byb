@@ -164,6 +164,9 @@ body {
     .btn{
         font-size: 1rem;
     }
+    .bg-light{
+        @include border-radius(1.5rem);
+    }
 }
 
 .requied-field {
