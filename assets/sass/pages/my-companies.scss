@@ -1,8 +1,10 @@
-.byb-companies{
+.byb-table-companies{
 display: inline-table;
 min-width: 624px;
 overflow-x: auto;
 white-space: nowrap;
+table-layout: fixed;
+word-wrap: break-word;
 thead th{
     color:$primary;
     border-bottom: 2px solid $primary;

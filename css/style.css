@@ -11209,14 +11209,16 @@ input.byb-search-input:before {
   color: #fff !important;
 }
 
-.byb-companies {
+.byb-table-companies {
   display: inline-table;
   min-width: 624px;
   overflow-x: auto;
   white-space: nowrap;
+  table-layout: fixed;
+  word-wrap: break-word;
 }
 
-.byb-companies thead th {
+.byb-table-companies thead th {
   color: #43c6ac;
   border-bottom: 2px solid #43c6ac;
   border-top: none;
@@ -11224,11 +11226,11 @@ input.byb-search-input:before {
   font-weight: normal;
 }
 
-.byb-companies .table-options .material-icons {
+.byb-table-companies .table-options .material-icons {
   font-size: inherit;
 }
 
-.byb-companies td {
+.byb-table-companies td {
   color: #8B8B8B;
   border-top: none;
   padding-left: 0;
@@ -11340,5 +11342,13 @@ input.byb-search-input:before {
 .color-list, .selected-color {
   font-family: 'FontAwesome';
   font-size: 3rem;
+}
+
+.app-access {
+  color: #6f8099;
+}
+
+.app-access .active {
+  color: #43c6ac;
 }
 /*# sourceMappingURL=style.css.map */
