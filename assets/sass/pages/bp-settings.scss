@@ -1,0 +1,48 @@
+#bp-settings{
+    font-size: 1rem;
+    .byb-form-group{
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+      
+    }
+    label{
+        white-space: nowrap;
+        color: $primary;
+        margin-bottom: 0;
+        line-height: 3rem;
+    }
+    [type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before{
+        top: -10px;
+    }
+    [type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after{
+        top:-6px
+    }
+    .radio-btn-label{
+        width: 2.5rem;
+    }
+    .byb-radio-btn {
+        width: 4rem;
+        display: flex;
+        align-items: center;
+    }
+}
+.color-list {
+    position: absolute;
+    left: -0.75rem;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 99;
+    top: 4rem;
+    li {  
+        list-style: none;
+    }
+}
+.color-list ,.selected-color{ 
+    font-family: 'FontAwesome';
+    font-size: 3rem;
+}

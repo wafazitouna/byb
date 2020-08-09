@@ -11203,7 +11203,6 @@ input.byb-search-input:before {
   border-bottom: 2px solid #43c6ac;
   border-top: none;
   padding-left: 0;
-  font-weight: 200;
 }
 
 .byb-companies .table-options .material-icons {
@@ -11248,5 +11247,79 @@ input.byb-search-input:before {
 .account-menu .active-menu {
   color: #43c6ac;
   background-color: transparent !important;
+}
+
+#bp-settings {
+  font-size: 1rem;
+}
+
+#bp-settings .byb-form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+#bp-settings label {
+  white-space: nowrap;
+  color: #43c6ac;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+#bp-settings [type="radio"]:checked + label:before, #bp-settings [type="radio"]:not(:checked) + label:before {
+  top: -10px;
+}
+
+#bp-settings [type="radio"]:checked + label:after, #bp-settings [type="radio"]:not(:checked) + label:after {
+  top: -6px;
+}
+
+#bp-settings .radio-btn-label {
+  width: 2.5rem;
+}
+
+#bp-settings .byb-radio-btn {
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.color-list {
+  position: absolute;
+  left: -0.25rem;
+  background: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  z-index: 99;
+  top: 4rem;
+}
+
+.color-list li {
+  list-style: none;
+}
+
+.color-list, .selected-color {
+  font-family: 'FontAwesome';
+  font-size: 2.25rem;
 }
 /*# sourceMappingURL=style.css.map */

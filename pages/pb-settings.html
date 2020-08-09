@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!--style.css-->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <!--font-awesome-->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+
+
+    <!--trumbowyg Editor-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.21.0/trumbowyg.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.21.0/ui/trumbowyg.min.css">
+
+    <!-- to load icons faster-->
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+
+    <!-- material icons-->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> -->
+
+    <title>BYB-BP settings</title>
+
+
+</head>
+
+<body id="bp-settings">
+    <!--header start-->
+    <header class="bg-secondary">
+        <div data-include="header"></div>
+    </header>
+    <!--header end-->
+
+    <div class="wrapper-page">
+        <div class="container p-md-5 mt-5 bg-light">
+            <div class="mb-4">Buisness plan settings</div>
+            <form id="bb-settings-form">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-5 d-flex align-items-center">
+                            <label>Buisness plan name</label>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <input type="text" class="byb-form-control" placeholder="Enter name" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-5 d-flex align-items-center">
+                            <label>Revenue Model</label>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="select-icon">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <select class="byb-form-control mb-3 mb-md-0">
+                                <option>Select revenue model</option>
+                                <option>revenue model 1</option>
+                                <option>revenue model 2</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-5 d-flex align-items-center">
+                            <label>Buisness plan duration</label>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="select-icon">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <select class="byb-form-control mb-3 mb-md-0">
+                                <option>5 years</option>
+                                <option>6 years</option>
+                                <option>8 years</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-5 d-flex align-items-center">
+                            <label>Buisness plan starting date</label>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <input type="date" class="byb-form-control" placeholder="mm/aa" />
+                        </div>
+                    </div>
+                </div>
+           
+        <div class="col-12 col-lg-6">
+            <div class="row mb-4">
+                <div class="col-12 col-md-5 d-flex align-items-center">
+                    <label>Brand colors</label>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="selected-color"><span style="color:#6f8098">&#xf0c8;</span></div>
+                            <ul class="color-list" style="display: none;">
+                                <li data-value="value 1"><span style="color:#EFAE00">&#xf0c8;</span></li>
+                                <li data-value="value 2"><span style="color:#000316">&#xf0c8;</span></li>
+                                <li data-value="value 3"><span style="color:#B7A8BA">&#xf0c8;</span> </li>
+                              </ul>
+                        </div>
+                        <div class="col-6">
+                            <div class="selected-color"><span style="color:#43c6ac">&#xf0c8;</span></div>
+                            <ul class="color-list" style="display: none;">
+                                <li data-value="value 1"><span style="color:#EFAE00">&#xf0c8;</span></li>
+                                <li data-value="value 2"><span style="color:#000316">&#xf0c8;</span></li>
+                                <li data-value="value 3"><span style="color:#B7A8BA">&#xf0c8;</span> </li>
+                              </ul>
+                        </div>
+                    </div>
+                   
+                      
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 col-md-5 d-flex align-items-center">
+                    <label>Buisness plan currency</label>
+                </div>
+                <div class="col-12 col-md-7 d-flex justify-content-between">
+                    <div class="byb-radio-btn ">
+                        <span class="radio-btn-label">TND</span>
+                        <input type="radio" value="tnd" name="currency" >
+                        <label for="tnd"></label>
+                    </div>
+                    <div class="byb-radio-btn ">
+                        <span class="radio-btn-label">USD</span>
+                        <input type="radio" value="usd" name="radio-group" checked>
+                        <label for="usd"></label>
+                    </div>
+                    
+                    <div class="byb-radio-btn ">
+                        <span class="radio-btn-label">Euro</span>
+                        <input type="radio" value="usd" name="radio-group" checked>
+                        <label for="usd"></label>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 col-md-5 d-flex align-items-center">
+                    <label>Buisness plan language</label>
+                </div>
+                <div class="col-12 col-md-7 d-flex justify-content-between">
+                    <div class="byb-radio-btn ">
+                        <span  class="radio-btn-label">FR</span>
+                        <input type="radio" name="language" value="fr" >
+                        <label for="language"></label>
+                    </div>
+                    <div class="byb-radio-btn ">
+                        <span  class="radio-btn-label">EN</span>
+                        <input type="radio" name="language" value="en">
+                        <label for="language"></label>
+                    </div>
+                    <div class="byb-radio-btn ">
+                        <span  class="radio-btn-label">AR</span>
+                        <input type="radio" name="language" value="ar" checked>
+                        <label for="language"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+        </div>
+        <div class="col-12 mt-4 text-center">
+            <button type="button" class="btn btn-purple btn-lg">Validate</button>
+        </div>
+    </div>
+    </div>
+
+    <!--Footer start-->
+    <footer class="bg-secondary">
+        <div data-include="footer"></div>
+    </footer>
+    <!--Footer end-->
+    <script>
+
+        jQuery(document).ready(function () {
+
+            var includes = jQuery('[data-include]');
+            jQuery.each(includes, function () {
+                var file = '/components/' + jQuery(this).data('include') + '.html';
+                jQuery(this).load(file);
+            });
+
+            jQuery(".selected-color").on("click", function() {
+    jQuery(".color-list").toggle();
+});
+
+var allOptions = jQuery(".color-list").children('li');
+jQuery(".color-list").on("click", "li", function() {
+    allOptions.removeClass('selected');
+    jQuery(this).addClass('selected');
+    jQuery('.selected-color').html(jQuery(this).html());
+  //  allOptions.toggle();
+    jQuery(".color-list").hide();
+});
+        });
+    </script>
+</body>
+
+</html>

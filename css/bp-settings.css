@@ -1,0 +1,16 @@
+#bp-settings .byb-form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bp-settings .byb-form-group label {
+  white-space: nowrap;
+}
+/*# sourceMappingURL=bp-settings.css.map */

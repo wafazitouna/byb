@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,YADQ,CACR,eAAe,CAAA;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;CAItB;;AARL,AAKQ,YALI,CACR,eAAe,CAIX,KAAK,CAAA;EACD,WAAW,EAAE,MAAM;CACtB",
+    "sources": [
+        "../assets/sass/pages/bp-settings.scss"
+    ],
+    "names": [],
+    "file": "bp-settings.css"
+}
