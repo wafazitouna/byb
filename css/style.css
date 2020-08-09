@@ -9366,6 +9366,12 @@ select {
 
 .wrapper-page {
   padding: 3rem 0;
+  min-height: 100vh;
+  font-size: 1rem;
+}
+
+.wrapper-page .btn {
+  font-size: 1rem;
 }
 
 .requied-field {
@@ -9386,6 +9392,15 @@ select {
 
 .aligned-row:before {
   display: block;
+}
+
+.wrapper-table {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.table-options {
+  opacity: 0.6;
 }
 
 header {
@@ -11196,6 +11211,9 @@ input.byb-search-input:before {
 
 .byb-companies {
   display: inline-table;
+  min-width: 624px;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .byb-companies thead th {
@@ -11203,6 +11221,7 @@ input.byb-search-input:before {
   border-bottom: 2px solid #43c6ac;
   border-top: none;
   padding-left: 0;
+  font-weight: normal;
 }
 
 .byb-companies .table-options .material-icons {
@@ -11294,7 +11313,7 @@ input.byb-search-input:before {
 
 .color-list {
   position: absolute;
-  left: -0.25rem;
+  left: -0.75rem;
   background: #ddd;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11320,6 +11339,6 @@ input.byb-search-input:before {
 
 .color-list, .selected-color {
   font-family: 'FontAwesome';
-  font-size: 2.25rem;
+  font-size: 3rem;
 }
 /*# sourceMappingURL=style.css.map */
