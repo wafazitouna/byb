@@ -66,7 +66,7 @@
                                 person
                                 </span>
                             Profile</a></li>
-                        <li class="menu-item"><a  href="#">
+                        <li class="menu-item active-menu"><a  href="#">
                             <span class="material-icons">
                                 payment
                                 </span>
@@ -81,44 +81,57 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-10 col-lg-10 p-0">
+        <div class="wrapper-page col-12 col-md-10 col-lg-10 pt-5">
             <div class="container">
-                <div class="row aligned-row ">
+                <div class="row">
                     <div class="col-12 col-md-6">
                     <div class="account-section  bg-light p-5">
-                        <div class="account-section-title pb-3">Current plan</div>
+                        <div class="account-section-title pb-3">Current plan </div>
                         <div class="account-info-content pt-3">
-                            <div class="row mb-4">
+                            <div class="row pb-4">
                                 <div div class="col-6 info-label">Number of companies</div>
                                 <div div class="col-6 info-value">2</div>
                             </div>
-                            <div class="row">
+                            <div class="row pb-4">
                                 <div div class="col-6 info-label">Number of team members</div>
                                 <div div class="col-6 info-value">2</div>
                             </div>
-                            <div class="row">
+                            <div class="row pb-4">
                                 <div div class="col-6 info-label">Active apps</div>
-                                <div div class="col-6 info-value">-----icons---</div>
+                                <div div class="col-6 info-value">
+                                    <span class="material-icons active">
+                                        bar_chart
+                                    </span>
+                                    <span class="material-icons active">
+                                        speed
+                                    </span>
+                                    <span class="material-icons">
+                                        text_snippet
+                                    </span>
+                                    <span class="material-icons">
+                                        question_answer
+                                    </span>
+                               </div>
                             </div>
-                            <div class="row">
+                            <div class="row pb-4">
                                 <div div class="col-6 info-label">Amount</div>
                                 <div div class="col-6 info-value">TND 148</div>
                             </div>
-                            <div class="row">
+                            <div class="row ">
                                 <div div class="col-6 info-label">Next billing date</div>
                                 <div div class="col-6 info-value">DD/MM/AA</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 mt-4 text-center">
-                        <button type="button" class="btn btn-purple btn-lg">Chnage plan</button>
+                    <div class="col-12 mt-4 mb-4 text-center">
+                        <button type="button" class="btn btn-purple btn-lg byb-disbaled-btn" disabled>Chnage plan</button>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="account-section  bg-light p-5">
                         <div class="account-section-title pb-3">Invoices </div>
                         <div class="account-info-content pt-3">
-                            <table class="table table-responsive">
+                            <table class="invoice-table table table-responsive">
                                 <thead>
                                     <tr>
                                         <th scope="col">Invoice Id</th>
@@ -136,7 +149,9 @@
                                         <td>TND 148</td>
                                         <td>Paid</td>
                                         <td></td>
-                                        <td></td>
+                                        <td class="download"><span class="material-icons">
+                                            get_app
+                                            </span></td>
                                     </tr>
                                     <tr >
                                         <td>xxxxxx</td>
@@ -144,16 +159,16 @@
                                         <td>TND 148</td>
                                         <td>Pending</td>
                                         <td><button type="button" class="btn btn-primary">Pay</button></td>
-                                        <td></td>
+                                        <td class="download"><span class="material-icons">
+                                            get_app
+                                            </span></td>
                                     </tr>
                                 </tbody>
                                
                             </table>
                         </div>
                     </div>
-                    <div class="col-12 mt-4 text-center">
-                        <button type="button" class="btn btn-purple btn-lg">Chnage password</button>
-                    </div>
+                  
                 </div>
                
             </div>

@@ -37,3 +37,24 @@
         background-color: transparent !important;
     }
 }
+
+.invoice-table{
+    display: inline-table;
+overflow-x: auto;
+white-space: nowrap;
+word-wrap: break-word;
+thead th{
+    font-weight: normal;
+    border-top: none;
+    padding-left: 0;
+}
+td{
+    border-top: none;
+    padding-left: 0;
+}
+.download{
+    color:$primary;
+    text-align: right;
+    padding-right: 0;
+}
+}

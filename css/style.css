@@ -11302,6 +11302,7 @@ input.byb-search-input:before {
 
 .account-section-title .material-icons {
   color: #606060;
+  opacity: 0.6;
 }
 
 .info-label {
@@ -11325,6 +11326,30 @@ input.byb-search-input:before {
 .account-menu .active-menu a {
   color: #43c6ac;
   background-color: transparent !important;
+}
+
+.invoice-table {
+  display: inline-table;
+  overflow-x: auto;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.invoice-table thead th {
+  font-weight: normal;
+  border-top: none;
+  padding-left: 0;
+}
+
+.invoice-table td {
+  border-top: none;
+  padding-left: 0;
+}
+
+.invoice-table .download {
+  color: #43c6ac;
+  text-align: right;
+  padding-right: 0;
 }
 
 #bp-settings {
