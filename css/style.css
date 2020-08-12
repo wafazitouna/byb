@@ -11399,7 +11399,7 @@ input.byb-search-input:before {
 
 .color-list {
   position: absolute;
-  left: -0.75rem;
+  left: -0.25rem;
   background: #ddd;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11423,9 +11423,21 @@ input.byb-search-input:before {
   list-style: none;
 }
 
+.color-list .fa {
+  font-size: 2rem;
+  margin-left: 1rem;
+  position: relative;
+}
+
 .color-list, .selected-color {
   font-family: 'FontAwesome';
   font-size: 3rem;
+}
+
+.input-group-addon {
+  position: absolute;
+  right: 0.5rem;
+  line-height: 9px;
 }
 
 .app-access .material-icons {

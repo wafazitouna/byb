@@ -29,7 +29,7 @@
 }
 .color-list {
     position: absolute;
-    left: -0.75rem;
+    left: -0.25rem;
     background: #ddd;
     display: flex;
     align-items: center;
@@ -41,8 +41,18 @@
     li {  
         list-style: none;
     }
+    .fa{
+        font-size: 2rem;
+    margin-left: 1rem;
+    position: relative;
+    }
 }
 .color-list ,.selected-color{ 
     font-family: 'FontAwesome';
     font-size: 3rem;
+}
+.input-group-addon {
+    position: absolute;
+    right: 0.5rem;
+    line-height: 9px;
 }
