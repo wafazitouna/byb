@@ -11423,15 +11423,19 @@ input.byb-search-input:before {
   list-style: none;
 }
 
-.color-list .fa {
-  font-size: 2rem;
-  margin-left: 1rem;
-  position: relative;
-}
-
 .color-list, .selected-color {
   font-family: 'FontAwesome';
   font-size: 3rem;
+}
+
+.selected-color {
+  display: inline-block;
+}
+
+.selected-color-wrapper .fa {
+  font-size: 2rem;
+  margin-left: 1rem;
+  position: relative;
 }
 
 .input-group-addon {

@@ -126,7 +126,8 @@
                             <div class="col-12 col-md-7">
                                 <div class="row">
                                     <div class="col-6">
-                                        <div class="selected-color"><span style="color:#6f8098">&#xf0c8;</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <div class="selected-color-wrapper"><div class="selected-color"><span style="color:#6f8098">&#xf0c8;</span></div>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i></div>
                                         <ul class="color-list" style="display: none;">
                                             <li data-value="value 1"><span style="color:#EFAE00">&#xf0c8;</span></li>
                                             <li data-value="value 2"><span style="color:#000316">&#xf0c8;</span></li>
@@ -134,7 +135,8 @@
                                         </ul>
                                     </div>
                                     <div class="col-6">
-                                        <div class="selected-color"><span style="color:#43c6ac">&#xf0c8;</span>
+                                        <div class="selected-color-wrapper">
+                                            <div class="selected-color"><span style="color:#43c6ac">&#xf0c8;</span></div>
                                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                                         </div>
                                         <ul class="color-list" style="display: none;">
@@ -220,7 +222,7 @@
 
 
 
-            jQuery(".selected-color").on("click", function () {
+            jQuery(".selected-color-wrapper").on("click", function () {
                 
                 selectedColor=jQuery(this);
                 colorList = jQuery(this).next('.color-list');
@@ -230,7 +232,7 @@
                 colorList.on("click", "li", function () {
                     allOptions.removeClass('selected');
                     jQuery(this).addClass('selected');
-                    selectedColor.html(jQuery(this).html());
+                    selectedColor.next('.selected-color').html(jQuery(this).html());
 
                     colorList.hide();
                 });
