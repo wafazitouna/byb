@@ -9921,6 +9921,8 @@ footer i {
 .secondary-menu {
   height: 4.5rem;
   background-color: #f7f7f7;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(32, 33, 36, 0.18);
+          box-shadow: 0 3px 5px 0 rgba(32, 33, 36, 0.18);
 }
 
 @media (max-width: 767px) {
