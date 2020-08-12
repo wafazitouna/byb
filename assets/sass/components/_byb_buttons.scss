@@ -41,3 +41,12 @@
 .btn-lg{
     width: 12rem;
 }
+
+.byb-disbaled-btn {
+    background-color: $dark-gray!important;
+    border-color: $dark-gray!important;
+    &:hover{
+        background-color: $dark-gray!important;
+        border-color: $dark-gray!important;
+    }
+}

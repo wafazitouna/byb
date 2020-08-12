@@ -1,18 +1,39 @@
-.account-section-title{
-    color:$primary;
-    border-bottom: 2px solid $primary;
-}
-.info-label{
-    color:$primary
+.account-section {
+    min-height: 400px;
 }
 
-.account-menu{
-    .menu-item{
-text-align: center;
-border-bottom: 2px solid;
+.account-section-title {
+    color: $primary;
+    border-bottom: 2px solid $primary;
+    display: flex;
+    justify-content: space-between;
+    .material-icons{
+        color:$main-color-text;
+        opacity: 0.6;
     }
-    .active-menu {
-        color:$primary;
-        background-color: transparent!important;
+}
+
+.info-label {
+    color: $primary
+}
+
+.account-menu {
+    .menu-item {
+
+        border-bottom: 1px solid $secondary;
+        padding: 1rem 0.5rem !important;
+
+        a {
+            color: $secondary;
+            .material-icons {
+                font-size: 2rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .active-menu a {
+        color: $primary;
+        background-color: transparent !important;
     }
 }

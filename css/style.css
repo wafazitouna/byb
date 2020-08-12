@@ -9367,7 +9367,6 @@ select {
 .wrapper-page {
   padding: 3rem 0;
   min-height: 100vh;
-  font-size: 1rem;
 }
 
 .wrapper-page .btn {
@@ -9375,7 +9374,7 @@ select {
 }
 
 .wrapper-page .bg-light {
-  border-radius: 1.5rem;
+  border-radius: 1.25rem;
 }
 
 .requied-field {
@@ -10191,7 +10190,7 @@ select option:first-child {
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 0;
+  top: 4px;
   left: 0;
   height: 25px;
   width: 25px;
@@ -10444,6 +10443,16 @@ select option:first-child {
 
 .btn-lg, .btn-group-lg > .btn {
   width: 12rem;
+}
+
+.byb-disbaled-btn {
+  background-color: #7D8CA3 !important;
+  border-color: #7D8CA3 !important;
+}
+
+.byb-disbaled-btn:hover {
+  background-color: #7D8CA3 !important;
+  border-color: #7D8CA3 !important;
 }
 
 .step-number {
@@ -11224,7 +11233,7 @@ input.byb-search-input:before {
 
 .byb-table-companies .table-options {
   font-size: 1.25rem;
-  text-align: center;
+  padding-left: 1rem;
   opacity: 0.6;
 }
 
@@ -11276,9 +11285,23 @@ input.byb-search-input:before {
   margin-bottom: 30px;
 }
 
+.account-section {
+  min-height: 400px;
+}
+
 .account-section-title {
   color: #43c6ac;
   border-bottom: 2px solid #43c6ac;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account-section-title .material-icons {
+  color: #606060;
 }
 
 .info-label {
@@ -11286,11 +11309,20 @@ input.byb-search-input:before {
 }
 
 .account-menu .menu-item {
-  text-align: center;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid #6f8099;
+  padding: 1rem 0.5rem !important;
 }
 
-.account-menu .active-menu {
+.account-menu .menu-item a {
+  color: #6f8099;
+}
+
+.account-menu .menu-item a .material-icons {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.account-menu .active-menu a {
   color: #43c6ac;
   background-color: transparent !important;
 }
