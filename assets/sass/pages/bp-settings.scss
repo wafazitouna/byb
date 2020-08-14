@@ -10,7 +10,7 @@
         white-space: nowrap;
         color: $primary;
         margin-bottom: 0;
-        line-height: 3rem;
+        line-height:2.5rem;
     }
     [type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before{
         top: -10px;
@@ -61,4 +61,5 @@ position: relative;
     position: absolute;
     right: 0.5rem;
     line-height: 9px;
+    top: 0.855rem;
 }

@@ -11372,7 +11372,7 @@ input.byb-search-input:before {
   white-space: nowrap;
   color: #43c6ac;
   margin-bottom: 0;
-  line-height: 3rem;
+  line-height: 2.5rem;
 }
 
 #bp-settings [type="radio"]:checked + label:before, #bp-settings [type="radio"]:not(:checked) + label:before {
@@ -11442,6 +11442,7 @@ input.byb-search-input:before {
   position: absolute;
   right: 0.5rem;
   line-height: 9px;
+  top: 0.855rem;
 }
 
 .app-access .material-icons {
