@@ -9218,7 +9218,6 @@ body {
   font-family: "BigShouldersText", sans-serif;
   color: #606060;
   font-size: 1.25rem;
-  height: 100%;
 }
 
 a:hover {
@@ -10904,13 +10903,13 @@ select option:first-child {
 
 @media (min-width: 1199px) {
   .byb-card-login {
-    width: 35%;
+    width: 30%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1198px) {
   .byb-card-login {
-    width: 60%;
+    width: 55%;
   }
 }
 
@@ -11198,13 +11197,13 @@ input.byb-search-input:before {
 
 @media (min-width: 1199px) {
   .byb-card-login {
-    width: 35%;
+    width: 30%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1198px) {
   .byb-card-login {
-    width: 60%;
+    width: 55%;
   }
 }
 
