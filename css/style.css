@@ -11464,4 +11464,8 @@ input.byb-search-input:before {
 .app-access .active {
   color: #43c6ac;
 }
+
+.table-options-head {
+  width: 5%;
+}
 /*# sourceMappingURL=style.css.map */
