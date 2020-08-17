@@ -11362,6 +11362,12 @@ input.byb-search-input:before {
 
 .account-menu .menu-item a {
   color: #6f8099;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .account-menu .menu-item a .material-icons {

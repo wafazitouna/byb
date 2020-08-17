@@ -25,6 +25,8 @@
 
         a {
             color: $secondary;
+            display: flex;
+            align-items: center;
             .material-icons {
                 font-size: 2rem;
                 margin-right: 1rem;
