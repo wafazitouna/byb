@@ -40,6 +40,10 @@
 }
 .byb-steps {
     height: 5rem;
+    @media(max-width:767px){
+        position: relative;
+        left: -20px;
+    }
     .nav-tabs{
         display: flex;
         justify-content: space-between;
