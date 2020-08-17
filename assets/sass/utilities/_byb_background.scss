@@ -38,5 +38,6 @@
 
 
 .bg-gradient-purple-30{
-    @include linear-gradient(90deg,$primary, #3588C8,$purple, $purple );
+   // @include linear-gradient(15deg,$primary, #3588C8,$purple, $purple );
+    background: linear-gradient(15deg, $primary 0%, #3588C8 45%, $purple  95%, $purple  100%)
 }

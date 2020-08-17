@@ -10867,8 +10867,7 @@ select option:first-child {
 }
 
 .bg-gradient-purple-30 {
-  background: -webkit-gradient(linear, left top, right top, from(#43c6ac), color-stop(30%, #3588C8), color-stop(98%, #746EDC), to(#746EDC));
-  background: linear-gradient(90deg, #43c6ac 0%, #3588C8 30%, #746EDC 98%, #746EDC 100%);
+  background: linear-gradient(15deg, #43c6ac 0%, #3588C8 45%, #746EDC 95%, #746EDC 100%);
 }
 
 .byb-logo-header {
