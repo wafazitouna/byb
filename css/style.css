@@ -11370,7 +11370,7 @@ input.byb-search-input:before {
           align-items: center;
 }
 
-.account-menu .menu-item a .material-icons {
+.account-menu .menu-item a .material-icons, .account-menu .menu-item a .fa {
   font-size: 2rem;
   margin-right: 1rem;
 }
@@ -11385,12 +11385,15 @@ input.byb-search-input:before {
   overflow-x: auto;
   white-space: nowrap;
   word-wrap: break-word;
+  font-size: 1rem;
+  color: #606060;
 }
 
 .invoice-table thead th {
   font-weight: normal;
   border-top: none;
   padding-left: 0;
+  border-bottom: 1px solid #6f8099;
 }
 
 .invoice-table td {
@@ -11402,6 +11405,12 @@ input.byb-search-input:before {
   color: #43c6ac;
   text-align: right;
   padding-right: 0;
+}
+
+.pay-btn {
+  color: #fff;
+  width: 100%;
+  padding: 0 0.75rem;
 }
 
 #bp-settings {
@@ -11449,8 +11458,8 @@ input.byb-search-input:before {
 
 .color-list {
   position: absolute;
-  left: -0.25rem;
-  background: #ddd;
+  left: -1.25rem;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11466,7 +11475,10 @@ input.byb-search-input:before {
           flex-direction: column;
   padding: 1rem;
   z-index: 99;
+  width: 8rem;
   top: 4rem;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .color-list li {
