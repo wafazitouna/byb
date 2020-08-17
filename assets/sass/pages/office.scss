@@ -1,5 +1,5 @@
-$bloc-width:15rem;
-$bloc-height:22rem;
+$bloc-width:13rem;
+$bloc-height:21rem;
 
 #office{
     .byb-section-title{
@@ -11,8 +11,6 @@ $bloc-height:22rem;
     }
     .slider-content{
         
-        display: flex;
-        flex-wrap: wrap;
         @media(min-width: 1200px){
             padding: 0 8%;
         }
@@ -49,17 +47,24 @@ $bloc-height:22rem;
     font-size: 1rem;
 }
 .byb-bloc-office-slide{
+    padding:1rem;
+    &:focus {
+        outline: none;
+    }
+
+.byb-bloc-office-slide-content{
     height: $bloc-height;
-    width: $bloc-width;
+    max-width: $bloc-width;
     background-color: #FAF9FA;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin: 0 1.5rem;
+
     .icon-bloc  .material-icons{
         font-size: 3rem;
     }
+}
 }
 input.byb-search-input{
     width: 30rem;
@@ -79,6 +84,9 @@ input.byb-search-input{
     color: #6A82FA;
     .material-icons{
         font-size: 4rem;
+    }
+    p{
+        font-size: 1rem;
     }
 }
 
@@ -101,3 +109,25 @@ input.byb-search-input{
         right: 1%;
     }
 }
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -18px; 
+    font-size:2.5rem!important;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .slider-prev {
+    left: -5%;
+    @media(max-width: 767px){
+        left: 0;
+    }
+    
+  }
+  .slider-next {
+    right: -5%;
+    @media(max-width: 767px){
+        right: 0;
+    }
+  }
