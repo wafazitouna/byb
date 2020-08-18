@@ -9474,8 +9474,8 @@ header .navbar {
 }
 
 header .dropdown-menu.show {
-  -webkit-transform: translate3d(50px, 14px, 0px) !important;
-          transform: translate3d(50px, 14px, 0px) !important;
+  -webkit-transform: translate3d(50px, 5px, 0px) !important;
+          transform: translate3d(50px, 5px, 0px) !important;
 }
 
 header span.menu-option-label {
@@ -11354,9 +11354,18 @@ input.byb-search-input:before {
   color: #43c6ac;
 }
 
+.account-menu {
+  padding: 0 1rem;
+  margin-top: -3rem;
+}
+
 .account-menu .menu-item {
   border-bottom: 1px solid #6f8099;
-  padding: 1rem 0.5rem !important;
+  padding: 1.5rem 0.5rem !important;
+}
+
+.account-menu .menu-item:last-child {
+  border-bottom: none;
 }
 
 .account-menu .menu-item a {
@@ -11369,9 +11378,17 @@ input.byb-search-input:before {
           align-items: center;
 }
 
-.account-menu .menu-item a .material-icons, .account-menu .menu-item a .fa {
+.account-menu .menu-item a .fa {
+  font-size: 1.75rem;
+}
+
+.account-menu .menu-item a .material-icons {
   font-size: 2rem;
-  margin-right: 1rem;
+}
+
+.account-menu .menu-item a .material-icons, .account-menu .menu-item a .fa {
+  width: 3rem;
+  text-align: center;
 }
 
 .account-menu .active-menu a {

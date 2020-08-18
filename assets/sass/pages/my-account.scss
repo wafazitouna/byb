@@ -18,18 +18,28 @@
 }
 
 .account-menu {
+    padding: 0 1rem;
+    margin-top: -3rem;
     .menu-item {
 
         border-bottom: 1px solid $secondary;
-        padding: 1rem 0.5rem !important;
-
+        padding: 1.5rem 0.5rem !important;
+ &:last-child{
+     border-bottom: none;
+ }
         a {
             color: $secondary;
             display: flex;
             align-items: center;
-            .material-icons,.fa {
+            .fa{
+                font-size: 1.75rem;
+            }
+            .material-icons{
                 font-size: 2rem;
-                margin-right: 1rem;
+            }
+            .material-icons,.fa {
+                width: 3rem;
+                text-align: center;
             }
         }
     }
