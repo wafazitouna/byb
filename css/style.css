@@ -11359,6 +11359,16 @@ input.byb-search-input:before {
   margin-top: -3rem;
 }
 
+.account-menu .label-menu {
+  color: #6f8099;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .account-menu .label-menu {
+    display: none;
+  }
+}
+
 .account-menu .menu-item {
   border-bottom: 1px solid #6f8099;
   padding: 1.5rem 0.5rem !important;
@@ -11386,14 +11396,19 @@ input.byb-search-input:before {
   font-size: 2rem;
 }
 
-.account-menu .menu-item a .material-icons, .account-menu .menu-item a .fa {
-  width: 3rem;
+.account-menu .menu-item a .material-icons,
+.account-menu .menu-item a .fa {
+  width: 4rem;
   text-align: center;
 }
 
 .account-menu .active-menu a {
   color: #43c6ac;
   background-color: transparent !important;
+}
+
+.account-menu .active-menu a .label-menu {
+  color: #43c6ac !important;
 }
 
 .invoice-table {
