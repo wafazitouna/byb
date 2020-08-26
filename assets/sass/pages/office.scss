@@ -2,6 +2,10 @@ $bloc-width:13rem;
 $bloc-height:21rem;
 
 #office{
+    .wrapper-page{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
     .byb-section-title{
         h2{
             font-size: 1.5rem;
@@ -54,7 +58,7 @@ $bloc-height:21rem;
 
 .byb-bloc-office-slide-content{
     height: $bloc-height;
-    max-width: $bloc-width;
+    width: $bloc-width;
     background-color: #FAF9FA;
     padding: 1rem;
     display: flex;

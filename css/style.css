@@ -10984,6 +10984,11 @@ select option:first-child {
   padding-bottom: 3rem;
 }
 
+#office .wrapper-page {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
 #office .byb-section-title h2 {
   font-size: 1.5rem;
   color: #7D8CA3;
@@ -11044,7 +11049,7 @@ select option:first-child {
 
 .byb-bloc-office-slide .byb-bloc-office-slide-content {
   height: 21rem;
-  max-width: 13rem;
+  width: 13rem;
   background-color: #FAF9FA;
   padding: 1rem;
   display: -webkit-box;
@@ -11465,11 +11470,13 @@ input.byb-search-input:before {
   line-height: 2.5rem;
 }
 
-#bp-settings [type="radio"]:checked + label:before, #bp-settings [type="radio"]:not(:checked) + label:before {
+#bp-settings [type="radio"]:checked + label:before,
+#bp-settings [type="radio"]:not(:checked) + label:before {
   top: -10px;
 }
 
-#bp-settings [type="radio"]:checked + label:after, #bp-settings [type="radio"]:not(:checked) + label:after {
+#bp-settings [type="radio"]:checked + label:after,
+#bp-settings [type="radio"]:not(:checked) + label:after {
   top: -6px;
 }
 
@@ -11516,7 +11523,8 @@ input.byb-search-input:before {
   list-style: none;
 }
 
-.color-list, .selected-color {
+.color-list,
+.selected-color {
   font-family: 'FontAwesome';
   font-size: 3rem;
 }
@@ -11529,6 +11537,7 @@ input.byb-search-input:before {
   font-size: 2rem;
   margin-left: 1rem;
   position: relative;
+  opacity: 0.5;
 }
 
 .input-group-addon {
